@@ -584,6 +584,8 @@ a{color:#18233A}a:hover{color:#3A4A66}
 <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
 <h2 style="margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700; color: #FFFFFF">Solicite su estudio gratuito de viabilidad</h2>
 <p style="margin: 0; color: #D3D9E3">Déjenos sus datos y le diremos, sin coste ni compromiso, si su caso puede reclamarse y qué podría recuperar.</p>
+<div data-ya-enviado hidden>
+<div style="display: flex; flex-direction: column; gap: 24px">
 <h3 style="margin: 8px 0 0; font-size: 20px; color: #FFFFFF">Para empezar bastan sus datos. Si quiere acelerar el estudio, tenga a mano:</h3>
 <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px">
 <li style="display: flex; align-items: flex-start; gap: 16px; font-size: 17px; color: #D3D9E3">
@@ -592,7 +594,7 @@ a{color:#18233A}a:hover{color:#3A4A66}
 </li>
 <li style="display: flex; align-items: flex-start; gap: 16px; font-size: 17px; color: #D3D9E3">
 <span aria-hidden="true" style="flex: 0 0 34px; height: 42px; border-radius: 3px; background: #FFFFFF; padding: 8px 6px; display: flex; flex-direction: column; gap: 4px"><span style="display: block; height: 3px; width: 100%; border-radius: 2px; background: #C2CAD6"></span><span style="display: block; height: 5px; width: 90%; border-radius: 2px; background: #FFC53D"></span><span style="display: block; height: 3px; width: 100%; border-radius: 2px; background: #C2CAD6"></span><span style="display: block; height: 3px; width: 60%; border-radius: 2px; background: #C2CAD6"></span></span>
-<span><strong style="color: #FFFFFF">Condiciones particulares de la póliza</strong> o solicitud del seguro de vida o de protección de pagos. No nos envíe el cuestionario de salud: no lo necesitamos.</span>
+<span><strong style="color: #FFFFFF">Condiciones particulares de la póliza</strong> o solicitud del seguro de vida o de protección de pagos.</span>
 </li>
 <li style="display: flex; align-items: flex-start; gap: 16px; font-size: 17px; color: #D3D9E3">
 <span aria-hidden="true" style="flex: 0 0 34px; height: 42px; border-radius: 3px; background: #FFFFFF; padding: 8px 6px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px"><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #FFC53D"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span></span>
@@ -604,6 +606,8 @@ a{color:#18233A}a:hover{color:#3A4A66}
 </li>
 </ul>
 <p style="margin: 0; color: #D3D9E3">Si le falta algún documento, no se preocupe: le indicaremos cómo solicitarlo a su entidad.</p>
+</div>
+</div>
 <p style="margin: 0; color: #D3D9E3">¿Prefiere hablar? <a href="tel:+34915425307" style="color: #FFFFFF; font-weight: 700; text-underline-offset: 4px">915 425 307</a></p>
 </div>
 
@@ -646,7 +650,7 @@ a{color:#18233A}a:hover{color:#3A4A66}
 <h3 style="margin: 6px 0 0; font-size: 24px; line-height: 1.2">¿Quiere acelerar el proceso?</h3>
 <p style="margin: 0; font-size: 16px; color: #2E3A50">Envíenos cualquiera de estos archivos. No hace falta que los tenga todos: con uno ya podemos empezar a estudiar su caso.</p>
 <div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-escritura" style="font-size: 15px; font-weight: 600">Escritura del préstamo, o FEIN/FIPER u oferta vinculante</label><input id="d-escritura" name="escritura" type="file" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
-<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-poliza" style="font-size: 15px; font-weight: 600">Condiciones particulares de la póliza o solicitud del seguro</label><span style="font-size: 14px; color: #4B5568">No incluya el cuestionario de salud.</span><input id="d-poliza" name="poliza" type="file" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-poliza" style="font-size: 15px; font-weight: 600">Condiciones particulares de la póliza o solicitud del seguro</label><input id="d-poliza" name="poliza" type="file" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
 <div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-cuadro" style="font-size: 15px; font-weight: 600">Cuadro de amortización</label><input id="d-cuadro" name="cuadro" type="file" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
 <div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-respuesta" style="font-size: 15px; font-weight: 600">Respuesta del banco o de la aseguradora, si ya ha reclamado</label><input id="d-respuesta" name="respuesta" type="file" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
 <p style="margin: 0; font-size: 14px; color: #4B5568">Formatos PDF, JPG o PNG, de hasta 8 MB por archivo. Una foto clara con el móvil sirve.</p>
@@ -756,6 +760,7 @@ a{color:#18233A}a:hover{color:#3A4A66}
   }
   function showStep(n) {
     document.querySelectorAll('[data-form-step]').forEach(function (s) { s.hidden = s.getAttribute('data-form-step') !== String(n); });
+    document.querySelectorAll('[data-ya-enviado]').forEach(function (s) { s.hidden = n < 2; });
   }
   document.querySelectorAll('[data-go]').forEach(function (b) {
     b.addEventListener('click', function () {
