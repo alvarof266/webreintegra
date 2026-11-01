@@ -629,12 +629,20 @@ a{color:#18233A}a:hover{color:#3A4A66}
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 6px">
-<label for="f-telefono" style="font-size: 15px; font-weight: 600">Teléfono</label>
-<input id="f-telefono" name="telefono" type="tel" autocomplete="tel" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #18233A">
+<label for="f-telefono" style="font-size: 15px; font-weight: 600">Teléfono móvil</label>
+<input id="f-telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #18233A">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-telefono2" style="font-size: 15px; font-weight: 600">Repita el teléfono móvil</label>
+<input id="f-telefono2" name="telefono_confirmar" type="tel" inputmode="tel" autocomplete="off" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #18233A">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="f-correo" style="font-size: 15px; font-weight: 600">Correo electrónico</label>
 <input id="f-correo" name="correo" type="email" autocomplete="email" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #18233A">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-correo2" style="font-size: 15px; font-weight: 600">Repita el correo electrónico</label>
+<input id="f-correo2" name="correo_confirmar" type="email" autocomplete="off" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #18233A">
 </div>
 </div>
 <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 2px"><legend style="padding: 0; margin-bottom: 4px; font-size: 15px; font-weight: 600; line-height: 1.4">¿Le cobraron el seguro de vida o de protección de pagos de una sola vez al firmar la hipoteca?</legend><div style="display: flex; flex-wrap: wrap; gap: 0 26px"><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="prima_unica" value="si" style="width: 20px; height: 20px; margin: 0; accent-color: #18233A">Sí</label><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="prima_unica" value="no" style="width: 20px; height: 20px; margin: 0; accent-color: #18233A">No</label><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="prima_unica" value="no_lo_se" style="width: 20px; height: 20px; margin: 0; accent-color: #18233A">No lo sé</label></div></fieldset>
@@ -846,11 +854,45 @@ a{color:#18233A}a:hover{color:#3A4A66}
     if (window.psEvento) psEvento('form_start', { formulario: 'contacto' });
     cajaContacto.removeEventListener('focusin', inicio);
   });
+  // Captcha sin terceros ni cookies: el navegador resuelve el reto firmado que trae la página (un segundo, sin hacer nada)
+  function resolverReto() {
+    var r = window.PS_RETO;
+    if (!r || !window.crypto || !crypto.subtle || !window.TextEncoder) return Promise.resolve('');
+    var cod = new TextEncoder();
+    function hex(buf) { return Array.prototype.map.call(new Uint8Array(buf), function (b) { return ('0' + b.toString(16)).slice(-2); }).join(''); }
+    return (async function () {
+      for (var n = 0; n <= r.maxnumber; n++) {
+        if (hex(await crypto.subtle.digest('SHA-256', cod.encode(r.salt + n))) === r.challenge) {
+          return btoa(JSON.stringify({ algorithm: r.algorithm, challenge: r.challenge, number: n, salt: r.salt, signature: r.signature }));
+        }
+      }
+      return '';
+    })();
+  }
   var btnDatos = document.querySelector('[data-action="enviar-datos"]');
+  // En los campos del móvil solo entran números, espacios y un «+» al principio
+  document.querySelectorAll('[name="telefono"], [name="telefono_confirmar"]').forEach(function (campo) {
+    campo.addEventListener('input', function () {
+      var limpio = campo.value.replace(/[^\d+\s]/g, '').replace(/(?!^)\+/g, '');
+      if (limpio !== campo.value) campo.value = limpio;
+    });
+  });
   if (btnDatos) btnDatos.addEventListener('click', function () {
     var caja = document.querySelector('[data-form="contacto"]');
     var req = caja.querySelectorAll('[required]');
     for (var k = 0; k < req.length; k++) { if (!req[k].checkValidity()) { req[k].reportValidity(); return; } }
+    // Móvil y correo: repetidos, para que no haya errores al escribirlos
+    var tel = caja.querySelector('[name="telefono"]'), tel2 = caja.querySelector('[name="telefono_confirmar"]');
+    var cor = caja.querySelector('[name="correo"]'), cor2 = caja.querySelector('[name="correo_confirmar"]');
+    function aviso(campo, texto) {
+      campo.setCustomValidity(texto); campo.reportValidity(); campo.focus();
+      campo.addEventListener('input', function () { campo.setCustomValidity(''); }, { once: true });
+    }
+    var movil = tel.value.replace(/\s/g, '');
+    if (!/^\+?\d{9,14}$/.test(movil)) { aviso(tel, 'Teléfono móvil no válido.'); return; }
+    if (tel2 && tel2.value.replace(/\s/g, '') !== movil) { aviso(tel2, 'Los teléfonos no coinciden.'); return; }
+    if (cor.value.indexOf('@') < 1) { aviso(cor, 'Correo electrónico no válido.'); return; }
+    if (cor2 && cor2.value.trim().toLowerCase() !== cor.value.trim().toLowerCase()) { aviso(cor2, 'Los correos no coinciden.'); return; }
     ocultarError('contacto');
     var datos = new URLSearchParams();
     datos.append('form-name', 'contacto');
@@ -870,9 +912,14 @@ a{color:#18233A}a:hover{color:#3A4A66}
     } catch (e) {}
     correo = (caja.querySelector('[name="correo"]') || {}).value || '';
     btnDatos.disabled = true; btnDatos.textContent = 'Enviando…';
-    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: datos.toString() })
-      .then(function (r) { if (!r.ok) throw new Error('envio'); if (window.psEvento) psEvento('generate_lead', { formulario: 'contacto' }); irA(2); })
-      .catch(function () { mostrarError('contacto'); })
+    resolverReto().then(function (altcha) { if (altcha) datos.append('altcha', altcha);
+      return fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: datos.toString() }); })
+      .then(function (r) {
+        // Si la plataforma rechaza el envío, se muestra su motivo (no un mensaje genérico)
+        if (!r.ok) return r.json().catch(function () { return {}; }).then(function (d) { throw new Error(d.error || ''); });
+        if (window.psEvento) psEvento('generate_lead', { formulario: 'contacto' }); irA(2);
+      })
+      .catch(function (err) { mostrarError('contacto', err && err.message ? err.message + ' Si no se resuelve, llámenos al 915 425 307.' : null); })
       .then(function () { btnDatos.disabled = false; btnDatos.textContent = 'Enviar mis datos'; });
   });
   // ---- Documentos: varios archivos por apartado, compresión en el navegador y un archivo por envío (límite de Netlify: 8 MB por envío)
