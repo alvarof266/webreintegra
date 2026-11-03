@@ -831,6 +831,7 @@ a{color:#18233A}a:hover{color:#3A4A66}
 
   var ref = 'RT-' + Date.now().toString(36).slice(-4).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
   var correo = '';
+  var permiso = '';  // lo da la plataforma al recibir los datos: sin él no acepta documentos
   var LIMITE = 8 * 1024 * 1024;
   function mostrarError(nombre, texto) {
     var e = document.querySelector('[data-error="' + nombre + '"]');
@@ -917,7 +918,10 @@ a{color:#18233A}a:hover{color:#3A4A66}
       .then(function (r) {
         // Si la plataforma rechaza el envío, se muestra su motivo (no un mensaje genérico)
         if (!r.ok) return r.json().catch(function () { return {}; }).then(function (d) { throw new Error(d.error || ''); });
-        if (window.psEvento) psEvento('generate_lead', { formulario: 'contacto' }); irA(2);
+        return r.json().catch(function () { return {}; }).then(function (d) {
+          permiso = d.permiso || '';
+          if (window.psEvento) psEvento('generate_lead', { formulario: 'contacto' }); irA(2);
+        });
       })
       .catch(function (err) { mostrarError('contacto', err && err.message ? err.message + ' Si no se resuelve, llámenos al 915 425 307.' : null); })
       .then(function () { btnDatos.disabled = false; btnDatos.textContent = 'Enviar mis datos'; });
@@ -944,9 +948,9 @@ a{color:#18233A}a:hover{color:#3A4A66}
   }
   async function comprimirPdf(archivo) {
     // PDF de más de 8 MB: cada página se convierte en imagen comprimida; si aun así pesa demasiado, se divide en partes
-    await cargar('https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js');
-    await cargar('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js');
-    window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    await cargar('/vendor/pdf.min.js');  // alojadas en la propia web (pdf.js 3.11.174 y jsPDF 2.5.1): sin depender de un CDN
+    await cargar('/vendor/jspdf.umd.min.js');
+    window.pdfjsLib.GlobalWorkerOptions.workerSrc = '/vendor/pdf.worker.min.js';
     var pdf = await window.pdfjsLib.getDocument({ data: await archivo.arrayBuffer() }).promise;
     var partes = [], doc = null, tam = 0, base = archivo.name.replace(/\.pdf$/i, '');
     for (var n = 1; n <= pdf.numPages; n++) {
@@ -999,7 +1003,7 @@ a{color:#18233A}a:hover{color:#3A4A66}
       for (var e2 = 0; e2 < envios.length; e2++) {
         btnDocs.textContent = 'Enviando ' + (e2 + 1) + ' de ' + envios.length + '…';
         var fd = new FormData();
-        fd.append('form-name', 'documentos'); fd.append('bot-field', ''); fd.append('referencia', ref); fd.append('correo', correo);
+        fd.append('form-name', 'documentos'); fd.append('bot-field', ''); fd.append('referencia', ref); fd.append('correo', correo); fd.append('permiso', permiso);
         fd.append(envios[e2].campo, envios[e2].archivo, envios[e2].archivo.name);
         var r = await fetch('/', { method: 'POST', body: fd });
         if (!r.ok) throw new Error('envio');
