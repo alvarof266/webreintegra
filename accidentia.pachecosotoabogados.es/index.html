@@ -1,0 +1,502 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accidentia, por Pacheco&amp;Soto Abogados — Accidentes de tráfico: lesiones, bajas e indemnizaciones</title>
+<meta name="description" content="¿Ha sufrido un accidente de tráfico? Analizamos su lesión, comprobamos la oferta de la aseguradora frente al baremo vigente y reclamamos lo que corresponde. Estudio gratuito.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232E7D5B'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='20' fill='%23F8F5EF'%3E%26%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --verde:#2E7D5B; --verde-oscuro:#1E5640; --verde-suave:#6FA98E;
+  --carbon:#1F1A17; --piedra:#D8CBBE; --marfil:#F8F5EF; --texto:#3A332E; --suave:#6B5F55;
+  --borde:#DCD5C9; --error-fondo:#FDECEC; --error:#8A1C1C;
+}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+body{margin:0;background:var(--marfil);color:var(--texto);font-family:'Source Sans 3',Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;font-weight:600;line-height:1.15;letter-spacing:-0.01em;color:var(--carbon);text-wrap:balance}
+h1{font-size:clamp(2rem,1.4rem+2.4vw,3.2rem)}
+h2{font-size:clamp(1.6rem,1.1rem+1.6vw,2.4rem)}
+h3{font-size:1.3rem}
+p,li{text-wrap:pretty}
+a{color:var(--carbon)}
+a:hover{color:var(--verde)}
+:focus-visible{outline:3px solid var(--verde);outline-offset:3px;border-radius:6px}
+section{scroll-margin-top:90px}
+.caja{max-width:1100px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.boton{display:inline-block;padding:15px 26px;border:0;border-radius:10px;background:var(--verde);color:#fff;font:inherit;font-weight:700;font-size:17px;text-decoration:none;cursor:pointer;transition:filter .2s ease;box-shadow:inset 0 -2px 0 rgba(0,0,0,.18)}
+.boton:hover{filter:brightness(.92);color:#fff}
+.boton-linea{display:inline-block;padding:13px 24px;border:1.5px solid var(--carbon);border-radius:10px;background:transparent;color:var(--carbon);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+.boton-linea:hover{background:rgba(46,125,91,.08);color:var(--carbon)}
+.sobre{font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--verde)}
+header{position:sticky;top:0;z-index:40;background:rgba(248,245,239,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde)}
+.barra{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:78px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .amp{width:42px;height:42px;border-radius:9px;background:var(--verde);color:var(--marfil);display:inline-flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-style:italic;font-size:26px}
+.logo .nombre{font-family:'Playfair Display',Georgia,serif;font-size:21px;font-weight:600;color:var(--carbon);line-height:1.1}
+.logo .sub{font-size:10px;letter-spacing:.3em;color:var(--suave)}
+.barra nav{display:flex;gap:22px;font-size:15px;font-weight:600}
+.barra nav a{text-decoration:none;color:var(--carbon)}
+.telefono{font-weight:700;white-space:nowrap;text-decoration:none;color:var(--carbon)}
+@media(max-width:900px){.barra nav,.telefono{display:none}}
+.hero{padding:clamp(56px,8vw,110px) 0 clamp(48px,6vw,90px)}
+.hero .rejilla{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center}
+@media(max-width:900px){.hero .rejilla{grid-template-columns:1fr}}
+.hero p.grande{font-size:clamp(1.1rem,1rem+.6vw,1.35rem);color:var(--suave);max-width:34em}
+.tarjeta-datos{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:26px 28px;box-shadow:0 40px 80px -56px rgba(31,26,23,.5);display:flex;flex-direction:column;gap:14px}
+.tarjeta-datos dt{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--suave)}
+.tarjeta-datos dd{margin:0;font-weight:600;color:var(--carbon)}
+.bloque{padding:clamp(48px,7vw,96px) 0}
+.franja{background:#fff;border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.oscuro{background:var(--verde-oscuro);color:var(--piedra)}
+.oscuro h2,.oscuro h3{color:var(--marfil)}
+.oscuro a{color:var(--verde-suave)}
+.oscuro .boton{background:var(--marfil);color:var(--verde-oscuro)}
+.oscuro .boton:hover{color:var(--verde-oscuro)}
+.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.tarjeta{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.oscuro .tarjeta{background:rgba(248,245,239,.06);border-color:rgba(248,245,239,.16)}
+.tarjeta .etiqueta{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--verde)}
+.oscuro .tarjeta .etiqueta{color:var(--verde-suave)}
+.tarjeta p{margin:0;color:var(--suave);font-size:15.5px}
+.oscuro .tarjeta p{color:var(--piedra)}
+.pasos{counter-reset:paso;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;list-style:none;margin:0;padding:0}
+.pasos li{counter-increment:paso;display:flex;flex-direction:column;gap:8px}
+.pasos li::before{content:counter(paso);width:34px;height:34px;border-radius:50%;border:1.5px solid var(--verde);color:var(--verde);display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.oscuro .pasos li::before{border-color:var(--verde-suave);color:var(--verde-suave)}
+.pasos p{margin:0;color:var(--suave);font-size:15.5px}
+.oscuro .pasos p{color:var(--piedra)}
+blockquote{margin:0;padding:24px 28px;border-left:4px solid var(--verde);background:rgba(46,125,91,.08);border-radius:0 12px 12px 0;font-size:1.15rem;color:var(--carbon)}
+.faq details{border-bottom:1px solid var(--borde);padding:14px 0}
+.faq summary{list-style:none;cursor:pointer;font-weight:600;font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;color:var(--carbon);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-weight:400;font-size:1.4rem;color:var(--verde)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:10px 0 0;color:var(--suave)}
+.formulario{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:clamp(24px,4vw,44px);display:flex;flex-direction:column;gap:18px;box-shadow:0 40px 80px -56px rgba(31,26,23,.45)}
+.campo{display:flex;flex-direction:column;gap:6px}
+.campo label{font-size:15px;font-weight:600;color:var(--carbon)}
+.campo input,.campo select{height:50px;padding:0 14px;border:1.5px solid var(--borde);border-radius:10px;font:inherit;font-size:16px;background:#fff;color:var(--texto)}
+.campo input:focus,.campo select:focus{border-color:var(--verde);outline:none}
+.dos-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.dos-col{grid-template-columns:1fr}}
+.opciones{display:flex;flex-wrap:wrap;gap:10px}
+.opciones label{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--borde);border-radius:10px;cursor:pointer;font-size:15.5px}
+.opciones input{accent-color:var(--verde)}
+.error{margin:0;padding:10px 12px;border-radius:8px;background:var(--error-fondo);color:var(--error);font-size:15px}
+.aviso-ok{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border-radius:10px;background:rgba(46,125,91,.1)}
+.aviso-ok .check{flex:0 0 44px;height:44px;border-radius:50%;background:var(--verde);display:inline-flex;align-items:center;justify-content:center}
+input[type=file]{font:inherit;font-size:15px}
+.suelto{padding:12px 14px;border:1.5px dashed #B7A896;border-radius:8px;display:flex;flex-direction:column;gap:6px}
+.pie{background:var(--carbon);color:var(--piedra);padding:44px 0;font-size:14.5px}
+.pie a{color:var(--marfil)}
+.pie .caja{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="caja barra">
+    <a class="logo" href="/" aria-label="Accidentia, por Pacheco y Soto Abogados">
+      <span class="amp" aria-hidden="true">&amp;</span>
+      <span><span class="nombre">Accidentia</span><br><span class="sub">PACHECO&amp;SOTO ABOGADOS</span></span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#reclamar">Qué se reclama</a>
+      <a href="#ofertas">La oferta de la aseguradora</a>
+      <a href="#despacho">Quién está detrás</a>
+      <a href="#metodo">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <span style="display:flex;gap:16px;align-items:center;white-space:nowrap">
+      <a class="telefono" href="tel:+34915425307">915 425 307</a>
+      <a class="telefono" href="https://wa.me/34637597988" target="_blank" rel="noopener">WhatsApp 637 597 988</a>
+    </span>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="caja rejilla">
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <p class="sobre" style="margin:0">Accidentes de tráfico · por Pacheco&amp;Soto Abogados</p>
+      <h1>Tras un accidente, la aseguradora le calcula su indemnización. Nadie se la revisa, salvo usted.</h1>
+      <p class="grande">Si ha sufrido lesiones en un accidente de tráfico, como conductor, pasajero, peatón o ciclista, le revisamos el caso: qué lesión tiene, cuánto tiempo seguirá tratándose, cuánto ha dejado de percibir y qué corresponde según el baremo vigente. Y si la oferta de la aseguradora se queda corta, reclamamos la diferencia.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px">
+        <a class="boton" href="#contacto">Solicitar estudio gratuito</a>
+        <a class="boton-linea" href="tel:+34915425307">Llamar al 915 425 307</a>
+        <a class="boton-linea" href="tel:+34637597988">Llamar al 637 597 988</a>
+        <a class="boton-linea" href="https://wa.me/34637597988?text=Hola%2C%20quiero%20consultar%20mi%20caso" target="_blank" rel="noopener">WhatsApp 637 597 988</a>
+      </div>
+      <p style="margin:0;font-size:14px;color:var(--suave)">Estudio inicial gratuito. Revisamos su caso y le decimos qué le corresponde antes de que firme nada.</p>
+    </div>
+    <dl class="tarjeta-datos" style="margin:0">
+      <div><dt>Servicio</dt><dd>Reclamación de lesiones y daños por accidente de tráfico</dd></div>
+      <div><dt>Despacho</dt><dd>Alberto Aguilera 35, 2º dcha., Madrid</dd></div>
+      <div><dt>Teléfono</dt><dd>915 425 307</dd></div>
+      <div><dt>Qué necesita</dt><dd>Parte, atestado o referencia del accidente e informe médico. Si no los tiene, le decimos cómo conseguirlos.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="reclamar" class="bloque franja">
+  <div class="caja" style="display:flex;flex-direction:column;gap:28px">
+    <div>
+      <p class="sobre" style="margin:0 0 8px">Qué se reclama</p>
+      <h2>Su lesión vale lo que dice el baremo, no lo que dice el teléfono de la aseguradora</h2>
+      <p style="max-width:46em;color:var(--suave)">Las indemnizaciones por accidente de tráfico en España se calculan con el sistema legal de valoración de daños (Real Decreto Legislativo 8/2004, texto refundido de la Ley sobre responsabilidad civil y seguro en la circulación de vehículos a motor). Ese sistema contempla más partidas de las que suelen incluir las primeras ofertas. Estas son las que revisamos:</p>
+    </div>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <span class="etiqueta">Días de lesión</span>
+        <h3>Días impedidos y no impedidos</h3>
+        <p>El baremo distingue los días en que la lesión le impidió desarrollar sus actividades habituales de los que no. Cada día tiene un valor, y contar mal los días es una de las rebajas más frecuentes.</p>
+      </div>
+      <div class="tarjeta">
+        <span class="etiqueta">Secuelas</span>
+        <h3>Perjuicios que quedan</h3>
+        <p>Cuando la lesión no desaparece del todo, hay que valorarla médicamente y después económicamente. Aceptar una oferta antes de saber si habrá secuela puede cerrar esa puerta para siempre.</p>
+      </div>
+      <div class="tarjeta">
+        <span class="etiqueta">Perjuicio económico</span>
+        <h3>Bajas, tratamientos y gastos</h3>
+        <p>Salario dejado de percibir, bajas autónomos y trabajadores por cuenta propia, tratamientos, desplazamientos y ayudas necesarias durante la recuperación. Se calculan con datos, no con aproximaciones.</p>
+      </div>
+      <div class="tarjeta">
+        <span class="etiqueta">Daños del vehículo</span>
+        <h3>Reparación, valor de mercado y pérdida</h3>
+        <p>Si el vehículo quedó dañado o perdido, revisamos la oferta de valoración, los gastos de sustitución y los perjuicios por su inmovilización.</p>
+      </div>
+      <div class="tarjeta">
+        <span class="etiqueta">Perjuicios personales</span>
+        <h3>Daño moral y familiares</h3>
+        <p>El baremo reconoce indemnizaciones específicas para el perjuicio moral de la víctima y para determinados perjuicios de familiares, como el acompañante o los que quedan a su cargo.</p>
+      </div>
+      <div class="tarjeta">
+        <span class="etiqueta">Sin seguro identificado</span>
+        <h3>Fondo de Garantía</h3>
+        <p>Si el responsable no identificado o sin seguro, la reclamación se dirige al Consorcio de Compensación de Seguros, con sus propios plazos y trámites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ofertas" class="bloque">
+  <div class="caja" style="display:flex;flex-direction:column;gap:24px">
+    <div>
+      <p class="sobre" style="margin:0 0 8px">Por qué revisar la oferta</p>
+      <h2>El primer número casi nunca es el bueno</h2>
+      <p style="max-width:46em;color:var(--suave)">Las aseguradoras liquidan rápido y con la información mínima: valoran la lesión antes de que se estabilice, cuentan solo los días que constan en sus partes y aplican el baremo a su manera. No es mala fe: es su forma de trabajar. Pero aceptar esa cifra y firmar su conformidad extingue la reclamación.</p>
+    </div>
+    <blockquote>Firmar la conformidad con una indemnización cierra el caso, incluso si después aparece una secuela que nadie valoró. Antes de firmar, sepa qué está firmando.</blockquote>
+    <p style="max-width:46em;color:var(--suave)">Nuestro trabajo empieza por ordenar la prueba: informes médicos, partes de baja, nóminas, atestado y correspondencia con la aseguradora. Con eso calculamos lo que corresponde según el baremo y se lo explicamos por escrito. Si la oferta es correcta, se lo diremos y no cobraremos honorarios por decirle que firme. Si se queda corta, negociamos o demandamos.</p>
+  </div>
+</section>
+
+<section id="despacho" class="bloque oscuro">
+  <div class="caja" style="display:flex;flex-direction:column;gap:26px">
+    <div>
+      <p class="sobre" style="margin:0 0 8px;color:var(--verde-suave)">Quién está detrás</p>
+      <h2>Accidentia es un servicio del despacho, no una plataforma sin nadie detrás</h2>
+    </div>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Gonzalo Pacheco Velasco</h3>
+        <p>Socio. Colegiado nº 53742 del Ilustre Colegio de la Abogacía de Madrid.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Beatriz Soto Ortiz</h3>
+        <p>Socia. Colegiada nº 46426 del Ilustre Colegio de la Abogacía de Madrid.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Pacheco&amp;Soto Abogados</h3>
+        <p>Despacho de Madrid con 29 años de ejercicio, especializado en litigación frente a bancos y aseguradoras. Accidentia es su línea de accidentes de tráfico.</p>
+        <a class="enlace" style="font-weight:700;color:var(--verde-suave)" href="https://pachecosotoabogados.es">www.pachecosotoabogados.es →</a>
+      </div>
+    </div>
+    <p style="max-width:46em">Su expediente lo estudia y lo firma un abogado colegiado, con nombre y apellidos, al que puede llamar o visitar en el despacho. Compruébelo en el <a href="https://www.abogacia.es/servicios/ciudadanos/censo-general-de-letrados/" rel="noopener" target="_blank">Censo General de Letrados del Consejo General de la Abogacía Española</a>.</p>
+  </div>
+</section>
+
+<section id="metodo" class="bloque franja">
+  <div class="caja" style="display:flex;flex-direction:column;gap:26px">
+    <div>
+      <p class="sobre" style="margin:0 0 8px">Cómo trabajamos</p>
+      <h2>De la urgencia al alta médica, y del alta al cobro</h2>
+    </div>
+    <ol class="pasos">
+      <li><h3>Estudio inicial gratuito</h3><p>Recogemos lo que tiene (parte, atestado, informes) y le decimos qué se puede reclamar y con qué plazos. Si le falta documentación, le indicamos cómo pedirla.</p></li>
+      <li><h3>Comunicación a la aseguradora</h3><p>Abrimos la reclamación frente a la compañía responsable y nos identificamos como su representación, para que la negociación no se haga directamente con usted.</p></li>
+      <li><h3>Seguimiento de su lesión</h3><p>No se puede valorar bien una lesión que aún no se ha estabilizado. Seguimos su evolución médica hasta el alta, que es cuando la indemnización puede calcularse de verdad.</p></li>
+      <li><h3>Cálculo conforme al baremo</h3><p>Con el informe de alta valoramos cada partida: días, secuelas, perjuicios económicos y personales. Le explicamos el cálculo, no solo la cifra.</p></li>
+      <li><h3>Oferta o demanda</h3><p>Si la aseguradora ofrece lo que corresponde, se lo diremos. Si no, presentamos demanda. Usted decide siempre si acepta una oferta o sigue el procedimiento.</p></li>
+      <li><h3>Cobro y cierre</h3><p>Seguimos el expediente hasta el abono efectivo de la indemnización.</p></li>
+    </ol>
+    <div style="background:#fff;border:1px solid var(--borde);border-radius:14px;padding:24px 26px;display:flex;flex-direction:column;gap:8px">
+      <h3 style="margin:0">Honorarios</h3>
+      <p style="margin:0;color:var(--suave)">El estudio inicial es gratuito. Si reclamamos, trabajamos con honorarios pactados por escrito en la hoja de encargo antes de empezar, sin letra pequeña. Si su caso no compensa, se lo diremos y no lo empezaremos.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="bloque">
+  <div class="caja" style="display:flex;flex-direction:column;gap:22px">
+    <div>
+      <p class="sobre" style="margin:0 0 8px">Preguntas frecuentes</p>
+      <h2>Las dudas más habituales</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>El accidente fue hace meses, ¿llego a tiempo?</summary>
+        <p>La acción para reclamar indemnización por un accidente de tráfico tiene, como regla general, un plazo de prescripción de un año desde el siniestro o desde que se conocieron las consecuencias, interrumpido por las reclamaciones extrajudiciales. Con el estudio inicial comprobamos su situación concreta: a veces hay tiempo, y a veces no. Preferimos decírselo antes que alimentar una expectativa imposible.</p>
+      </details>
+      <details>
+        <summary>Yo también tenía parte de culpa, ¿puedo reclamar?</summary>
+        <p>Sí, en la parte que corresponda. Si hay concurrencia de culpas, la indemnización se reduce proporcionalmente. Revisamos el atestado y las circunstancias para saber qué cabe defender en su caso.</p>
+      </details>
+      <details>
+        <summary>La aseguradora ya me ha ofrecido una cantidad, ¿sirve?</summary>
+        <p>Puede servir, o no. La comparamos con lo que corresponde según el baremo y su documentación médica. Si es correcta, se lo diremos; firmar una oferta justa también es un buen resultado. Si se queda corta, negociamos la diferencia.</p>
+      </details>
+      <details>
+        <summary>Me dieron el alta y sigo con molestias, ¿qué hago?</summary>
+        <p>No firme conformidad y consúltenos. Si tras el alta persisten síntomas, puede ser necesaria una valoración de secuela, y esa partida suele ser la más importante del expediente. Firmar antes de la estabilización puede cerrar la reclamación.</p>
+      </details>
+      <details>
+        <summary>Era peatón / ciclista / pasajero, ¿me aplican los mismos límites?</summary>
+        <p>Las víctimas que no son conductor del vehículo tienen un régimen más favorable en el baremo, con indemnizaciones mínimas incluso si fueron parcialmente responsables. Es una de las diferencias que más dinero deja sobre la mesa cuando el expediente se liquida como si la víctima fuera el conductor.</p>
+      </details>
+      <details>
+        <summary>¿Qué pasa si el responsable no tiene seguro o huyó?</summary>
+        <p>La reclamación se dirige al Consorcio de Compensación de Seguros, que atiende los siniestros causados por vehículos sin seguro o sin identificar. Tiene plazos y trámites propios; le indicamos cómo actuar en el estudio inicial.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="bloque franja">
+  <div class="caja" style="display:flex;flex-direction:column;gap:26px">
+    <div>
+      <p class="sobre" style="margin:0 0 8px">Contacto</p>
+      <h2>Cuéntenos su accidente</h2>
+      <p style="max-width:44em;color:var(--suave)">Déjenos sus datos y un resumen del accidente. Un abogado del despacho revisará la información y se pondrá en contacto con usted. Si prefiere hablar ahora, llame al <a href="tel:+34915425307">915 425 307</a> o al <a href="tel:+34637597988">637 597 988</a>, escríbanos por <a href="https://wa.me/34637597988" target="_blank" rel="noopener">WhatsApp</a> o envíe un correo a <a href="mailto:pachecosotoabogados@gmail.com">pachecosotoabogados@gmail.com</a>.</p>
+    </div>
+    <div class="formulario">
+      <div data-form-step="1">
+        <div data-form="contacto" style="display:flex;flex-direction:column;gap:16px" onsubmit="return false">
+          <input type="text" name="bot-field" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <div class="dos-col">
+            <div class="campo"><label for="f-nombre">Nombre y apellidos</label><input id="f-nombre" name="nombre" type="text" required autocomplete="name"></div>
+            <div class="campo"><label for="f-fecha">Fecha aproximada del accidente</label><input id="f-fecha" name="fecha_accidente" type="date" required></div>
+          </div>
+          <div class="dos-col">
+            <div class="campo"><label for="f-telefono">Teléfono móvil</label><input id="f-telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required></div>
+            <div class="campo"><label for="f-telefono2">Repita el teléfono móvil</label><input id="f-telefono2" name="telefono_confirmar" type="tel" inputmode="tel" required></div>
+          </div>
+          <div class="dos-col">
+            <div class="campo"><label for="f-correo">Correo electrónico</label><input id="f-correo" name="correo" type="email" autocomplete="email" required></div>
+            <div class="campo"><label for="f-correo2">Repita el correo electrónico</label><input id="f-correo2" name="correo_confirmar" type="email" required></div>
+          </div>
+          <div class="campo"><span class="label" style="font-size:15px;font-weight:600;color:var(--carbon)">Usted era</span>
+            <div class="opciones">
+              <label><input type="radio" name="rol" value="conductor" required>Conductor</label>
+              <label><input type="radio" name="rol" value="pasajero">Pasajero</label>
+              <label><input type="radio" name="rol" value="peaton">Peatón</label>
+              <label><input type="radio" name="rol" value="ciclista">Ciclista</label>
+            </div>
+          </div>
+          <div class="campo"><span class="label" style="font-size:15px;font-weight:600;color:var(--carbon)">¿La aseguradora le ha hecho ya una oferta?</span>
+            <div class="opciones">
+              <label><input type="radio" name="oferta" value="si" required>Sí</label>
+              <label><input type="radio" name="oferta" value="no">No</label>
+              <label><input type="radio" name="oferta" value="no-se">No lo sé</label>
+            </div>
+          </div>
+          <div class="campo"><label for="f-mensaje">Cuéntenos brevemente qué ocurrió</label><input id="f-mensaje" name="mensaje" type="text" placeholder="Por ejemplo: alcance en la M-40, baja de tres semanas, aún con molestias cervicales" style="height:auto;padding:12px 14px"></div>
+          <label style="display:flex;gap:10px;align-items:flex-start;font-size:15px"><input type="checkbox" name="privacidad" value="sí" required style="accent-color:var(--verde);margin-top:5px">He leído y acepto la <a href="politica-de-privacidad.html">Política de privacidad</a>.</label>
+          <button type="button" class="boton" data-action="enviar-datos" style="align-self:flex-start">Enviar mis datos</button>
+          <p class="error" data-error="contacto" hidden role="alert">No se han podido enviar sus datos. Inténtelo de nuevo o llámenos al 915 425 307.</p>
+          <p style="margin:0;font-size:13px;color:var(--suave)">Puede retirar su consentimiento en cualquier momento escribiendo a <a href="mailto:pachecosotoabogados@gmail.com">pachecosotoabogados@gmail.com</a>.</p>
+        </div>
+      </div>
+      <div data-form-step="2" hidden>
+        <div data-form="documentos" style="display:flex;flex-direction:column;gap:18px">
+          <div class="aviso-ok">
+            <span class="check" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"><path d="M20 6 9 17l-5-5"></path></svg></span>
+            <div><h3 role="status" style="margin:0;font-size:21px">Sus datos se han enviado</h3><p style="margin:0">Nos pondremos en contacto con usted a la mayor brevedad. Su referencia es <strong data-ref="1"></strong>.</p></div>
+          </div>
+          <h3>¿Quiere adelantar el estudio?</h3>
+          <p style="margin:0;color:var(--suave)">Envíenos ahora cualquier documento del accidente. No hace falta que los tenga todos: con uno ya podemos empezar. Si lo prefiere, puede enviárnoslos más adelante o por correo a <a href="mailto:pachecosotoabogados@gmail.com">pachecosotoabogados@gmail.com</a> con su referencia en el asunto.</p>
+          <div class="suelto"><label for="d-doc" style="font-size:15px;font-weight:600">Documentos (parte amistoso o atestado, informes médicos, partes de baja, oferta de la aseguradora, fotografías...)</label><input id="d-doc" name="documentos" type="file" multiple accept=".pdf,.jpg,.jpeg,.png"></div>
+          <p style="margin:0;font-size:14px;color:var(--suave)">Formatos PDF, JPG o PNG. Las fotos se comprimen en su navegador antes de enviarlas; los archivos de más de 8 MB es mejor enviarlos por correo.</p>
+          <button type="button" class="boton" data-action="enviar-docs" style="align-self:flex-start">Enviar documentos</button>
+          <p class="error" data-error="documentos" hidden role="alert">No se han podido enviar los documentos. Inténtelo de nuevo o envíelos por correo con su referencia en el asunto.</p>
+          <p style="margin:0;font-size:15px;color:var(--suave)">Si ahora no los tiene a mano, no se preocupe: su solicitud ya está registrada.</p>
+        </div>
+      </div>
+      <div data-form-step="3" hidden>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div class="aviso-ok">
+            <span class="check" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"><path d="M20 6 9 17l-5-5"></path></svg></span>
+            <div><h3 role="status" style="margin:0;font-size:21px">Documentos recibidos</h3><p style="margin:0">Gracias. Con ellos podremos preparar el estudio antes de llamarle. Su referencia es <strong data-ref="1"></strong>.</p></div>
+          </div>
+          <h3>Qué ocurre ahora</h3>
+          <ol style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;color:var(--suave)">
+            <li>Revisamos su solicitud y los documentos que nos ha enviado.</li>
+            <li>Le llamamos para resolver dudas y, si falta algo, le decimos cómo conseguirlo.</li>
+            <li>Le explicamos por escrito qué se puede reclamar y con qué plazos.</li>
+          </ol>
+          <p style="margin:0;padding:12px 14px;border-radius:8px;background:rgba(46,125,91,.1);font-size:15px">Mientras tanto, no firme conformidad con ninguna oferta de la aseguradora sin revisarla antes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="caja">
+    <div><strong style="font-family:'Playfair Display',Georgia,serif;color:#F8F5EF">Accidentia</strong> · Pacheco&amp;Soto Abogados<br>Alberto Aguilera 35, 2º dcha., 28015 Madrid · Tel. 915 425 307 · <a href="tel:+34637597988">637 597 988</a> · <a href="https://wa.me/34637597988" target="_blank" rel="noopener">WhatsApp</a></div>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <a href="https://pachecosotoabogados.es">Pacheco&amp;Soto Abogados</a>
+      <a href="https://reintegra.pachecosotoabogados.es">Reintegra</a>
+      <a href="politica-de-privacidad.html">Privacidad</a>
+      <a href="mailto:pachecosotoabogados@gmail.com">pachecosotoabogados@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var ref = 'AC-' + Date.now().toString(36).slice(-4).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
+  var permiso = '';
+  var LIMITE = 8 * 1024 * 1024;
+  function pasos() { return document.querySelectorAll('[data-form-step]'); }
+  function mostrarPaso(n) { pasos().forEach(function (s, i) { s.hidden = (i !== n - 1); }); }
+  function error(nombre, texto) {
+    var e = document.querySelector('[data-error="' + nombre + '"]');
+    if (!e) return; if (texto) e.textContent = texto; e.hidden = false;
+  }
+  // Captcha sin terceros ni cookies: la plataforma inyecta el reto firmado en PS_RETO
+  function resolverReto() {
+    var r = window.PS_RETO;
+    if (!r || !window.crypto || !crypto.subtle || !window.TextEncoder) return Promise.resolve('');
+    var cod = new TextEncoder();
+    function hex(buf) { return Array.prototype.map.call(new Uint8Array(buf), function (b) { return ('0' + b.toString(16)).slice(-2); }).join(''); }
+    return (async function () {
+      for (var n = 0; n <= r.maxnumber; n++) {
+        if (hex(await crypto.subtle.digest('SHA-256', cod.encode(r.salt + n))) === r.challenge) {
+          return btoa(JSON.stringify({ algorithm: r.algorithm, challenge: r.challenge, number: n, salt: r.salt, signature: r.signature }));
+        }
+      }
+      return '';
+    })();
+  }
+  document.querySelectorAll('[name="telefono"], [name="telefono_confirmar"]').forEach(function (c) {
+    c.addEventListener('input', function () {
+      var limpio = c.value.replace(/[^\d+\s]/g, '').replace(/(?!^)\+/g, '');
+      if (limpio !== c.value) c.value = limpio;
+    });
+  });
+  var btnDatos = document.querySelector('[data-action="enviar-datos"]');
+  if (btnDatos) btnDatos.addEventListener('click', function () {
+    var caja = document.querySelector('[data-form="contacto"]');
+    var req = caja.querySelectorAll('[required]');
+    for (var k = 0; k < req.length; k++) { if (!req[k].checkValidity()) { req[k].reportValidity(); return; } }
+    var tel = caja.querySelector('[name="telefono"]'), tel2 = caja.querySelector('[name="telefono_confirmar"]');
+    var cor = caja.querySelector('[name="correo"]'), cor2 = caja.querySelector('[name="correo_confirmar"]');
+    function aviso(campo, texto) {
+      campo.setCustomValidity(texto); campo.reportValidity(); campo.focus();
+      campo.addEventListener('input', function () { campo.setCustomValidity(''); }, { once: true });
+    }
+    var movil = tel.value.replace(/\s/g, '');
+    if (!/^\+?\d{9,14}$/.test(movil)) { aviso(tel, 'Teléfono móvil no válido.'); return; }
+    if (tel2 && tel2.value.replace(/\s/g, '') !== movil) { aviso(tel2, 'Los teléfonos no coinciden.'); return; }
+    if (cor.value.indexOf('@') < 1) { aviso(cor, 'Correo electrónico no válido.'); return; }
+    if (cor2 && cor2.value.trim().toLowerCase() !== cor.value.trim().toLowerCase()) { aviso(cor2, 'Los correos no coinciden.'); return; }
+    document.querySelector('[data-error="contacto"]').hidden = true;
+    var datos = new URLSearchParams();
+    datos.append('form-name', 'contacto');
+    datos.append('web', 'accidentia');
+    datos.append('linea', 'accidentia');
+    datos.append('asunto', 'accidente-trafico');
+    datos.append('referencia', ref);
+    caja.querySelectorAll('input, select').forEach(function (i) {
+      if (!i.name || i.type === 'file') return;
+      if ((i.type === 'radio' || i.type === 'checkbox') && !i.checked) return;
+      datos.append(i.name, i.value);
+    });
+    var q = new URLSearchParams(location.search);
+    ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (k) { if (q.get(k)) datos.append(k, q.get(k).slice(0, 100)); });
+    try {
+      var origen = document.referrer ? new URL(document.referrer).hostname : '';
+      if (origen && origen !== location.hostname) datos.append('referente', origen);
+    } catch (e) {}
+    btnDatos.disabled = true; btnDatos.textContent = 'Enviando…';
+    resolverReto().then(function (altcha) { if (altcha) datos.append('altcha', altcha);
+      return fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: datos.toString() }); })
+      .then(function (r) {
+        if (!r.ok) return r.json().catch(function () { return {}; }).then(function (d) { throw new Error(d.error || ''); });
+        return r.json().catch(function () { return {}; }).then(function (d) {
+          permiso = d.permiso || '';
+          document.querySelectorAll('[data-ref]').forEach(function (el) { el.textContent = ref; });
+          mostrarPaso(2);
+          document.getElementById('contacto').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      })
+      .catch(function (err) { error('contacto', err && err.message ? err.message + ' Si no se resuelve, llámenos al 915 425 307.' : 'No se han podido enviar sus datos. Inténtelo de nuevo o llámenos al 915 425 307.'); })
+      .then(function () { btnDatos.disabled = false; btnDatos.textContent = 'Enviar mis datos'; });
+  });
+  // Documentos: compresión de imágenes en el navegador y un archivo por envío (límite 8 MB)
+  function comprimirImagen(archivo) {
+    return new Promise(function (ok) {
+      if (!/^image\/(jpeg|png|webp)$/.test(archivo.type) || archivo.size < 1.5 * 1024 * 1024) { ok(archivo); return; }
+      var url = URL.createObjectURL(archivo), img = new Image();
+      img.onload = function () {
+        var escala = Math.min(1, 2200 / Math.max(img.width, img.height)), c = document.createElement('canvas');
+        c.width = Math.round(img.width * escala); c.height = Math.round(img.height * escala);
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); URL.revokeObjectURL(url);
+        c.toBlob(function (b) { ok(b && b.size < archivo.size ? new File([b], archivo.name.replace(/\.\w+$/, '') + '.jpg', { type: 'image/jpeg' }) : archivo); }, 'image/jpeg', 0.82);
+      };
+      img.onerror = function () { URL.revokeObjectURL(url); ok(archivo); };
+      img.src = url;
+    });
+  }
+  var btnDocs = document.querySelector('[data-action="enviar-docs"]');
+  if (btnDocs) btnDocs.addEventListener('click', async function () {
+    document.querySelector('[data-error="documentos"]').hidden = true;
+    var inputs = document.querySelectorAll('[data-form="documentos"] input[type="file"]');
+    var lista = [];
+    inputs.forEach(function (i) { Array.prototype.forEach.call(i.files || [], function (f) { lista.push({ campo: i.name, archivo: f }); }); });
+    if (!lista.length) { mostrarPaso(3); return; }
+    btnDocs.disabled = true; btnDocs.textContent = 'Enviando…';
+    try {
+      for (var k = 0; k < lista.length; k++) {
+        var item = lista[k];
+        var archivo = await comprimirImagen(item.archivo);
+        if (archivo.size > LIMITE) throw new Error('El archivo «' + archivo.name + '» pesa más de 8 MB. Envíelo por correo con su referencia en el asunto.');
+        var fd = new FormData();
+        fd.append('form-name', 'documentos');
+        fd.append('web', 'accidentia');
+        fd.append('linea', 'accidentia');
+        fd.append('referencia', ref);
+        fd.append('permiso', permiso);
+        fd.append('campo', item.campo);
+        fd.append('archivo', archivo, archivo.name);
+        var r = await fetch('/', { method: 'POST', body: fd });
+        if (!r.ok) { var d = await r.json().catch(function () { return {}; }); throw new Error(d.error || ''); }
+      }
+      mostrarPaso(3);
+      document.getElementById('contacto').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (err) {
+      error('documentos', err && err.message ? err.message : 'No se han podido enviar los documentos. Inténtelo de nuevo o envíelos por correo con su referencia en el asunto.');
+    }
+    btnDocs.disabled = false; btnDocs.textContent = 'Enviar documentos';
+  });
+})();
+</script>
+</body>
+</html>
