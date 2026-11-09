@@ -1,388 +1,807 @@
-
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accidentia, por Pacheco&amp;Soto Abogados — Accidentes de tráfico: lesiones, bajas e indemnizaciones</title>
-<meta name="description" content="¿Ha sufrido un accidente de tráfico? Analizamos su lesión, comprobamos la oferta de la aseguradora frente al baremo vigente y reclamamos lo que corresponde. Estudio gratuito.">
-<link rel="canonical" href="https://pachecosotoabogados.es/accidentia/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232E7D5B'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='20' fill='%23F8F5EF'%3E%26%3C/text%3E%3C/svg%3E">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accidentia, por Pacheco&amp;Soto Abogados: accidentes de tráfico e indemnizaciones</title>
+<meta name="description" content="Accidentia, por Pacheco&amp;Soto Abogados. ¿Le ofrecen menos de lo que corresponde tras un accidente de tráfico? Revisamos su indemnización con el baremo vigente. Despacho en Madrid.">
+<link rel="canonical" href="https://accidentia.pachecosotoabogados.es/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2028%2028%27%3E%3Crect%20width%3D%2728%27%20height%3D%2728%27%20rx%3D%276%27%20fill%3D%27%23FFFFFF%27/%3E%3Ccircle%20cx%3D%2714%27%20cy%3D%2714%27%20r%3D%2710%27%20fill%3D%27none%27%20stroke%3D%27%2316261D%27%20stroke-width%3D%273.6%27%20stroke-dasharray%3D%2750%2012.83%27%20transform%3D%27rotate%28-62%2014%2014%29%27/%3E%3Ccircle%20cx%3D%2714%27%20cy%3D%2714%27%20r%3D%2710%27%20fill%3D%27none%27%20stroke%3D%27%2332734A%27%20stroke-width%3D%273.6%27%20stroke-dasharray%3D%2710.6%2052.23%27%20stroke-dashoffset%3D%27-51.1%27%20transform%3D%27rotate%28-62%2014%2014%29%27/%3E%3Ctext%20x%3D%2714%27%20y%3D%2718%27%20text-anchor%3D%27middle%27%20font-family%3D%27Arial%2C%20sans-serif%27%20font-size%3D%2711%27%20font-weight%3D%27800%27%20fill%3D%27%2316261D%27%3E%E2%9C%9A%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Schibsted+Grotesk:wght@400;500;600;700;800&amp;display=swap">
 <style>
-:root{
-  --verde:#2E7D5B; --verde-oscuro:#1E5640; --verde-suave:#6FA98E;
-  --carbon:#1F1A17; --piedra:#D8CBBE; --marfil:#F8F5EF; --texto:#3A332E; --suave:#6B5F55;
-  --borde:#DCD5C9; --error-fondo:#FDECEC; --error:#8A1C1C;
-}
-*{box-sizing:border-box}
 [hidden]{display:none !important}
-body{margin:0;background:var(--marfil);color:var(--texto);font-family:'Source Sans 3',Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;font-weight:600;line-height:1.15;letter-spacing:-0.01em;color:var(--carbon);text-wrap:balance}
-h1{font-size:clamp(2rem,1.4rem+2.4vw,3.2rem)}
-h2{font-size:clamp(1.6rem,1.1rem+1.6vw,2.4rem)}
-h3{font-size:1.3rem}
-p,li{text-wrap:pretty}
-a{color:var(--carbon)}
-a:hover{color:var(--verde)}
-:focus-visible{outline:3px solid var(--verde);outline-offset:3px;border-radius:6px}
-section{scroll-margin-top:90px}
-.caja{max-width:1100px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
-.boton{display:inline-block;padding:15px 26px;border:0;border-radius:10px;background:var(--verde);color:#fff;font:inherit;font-weight:700;font-size:17px;text-decoration:none;cursor:pointer;transition:filter .2s ease;box-shadow:inset 0 -2px 0 rgba(0,0,0,.18)}
-.boton:hover{filter:brightness(.92);color:#fff}
-.boton-linea{display:inline-block;padding:13px 24px;border:1.5px solid var(--carbon);border-radius:10px;background:transparent;color:var(--carbon);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
-.boton-linea:hover{background:rgba(46,125,91,.08);color:var(--carbon)}
-.sobre{font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--verde)}
-header{position:sticky;top:0;z-index:40;background:rgba(248,245,239,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde)}
-.barra{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:78px}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo .amp{width:42px;height:42px;border-radius:9px;background:var(--verde);color:var(--marfil);display:inline-flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-style:italic;font-size:26px}
-.logo .nombre{font-family:'Playfair Display',Georgia,serif;font-size:21px;font-weight:600;color:var(--carbon);line-height:1.1}
-.logo .sub{font-size:10px;letter-spacing:.3em;color:var(--suave)}
-.barra nav{display:flex;gap:22px;font-size:15px;font-weight:600}
-.barra nav a{text-decoration:none;color:var(--carbon)}
-.telefono{font-weight:700;white-space:nowrap;text-decoration:none;color:var(--carbon)}
-@media(max-width:900px){.barra nav,.telefono{display:none}}
-.hero{padding:clamp(56px,8vw,110px) 0 clamp(48px,6vw,90px)}
-.hero .rejilla{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center}
-@media(max-width:900px){.hero .rejilla{grid-template-columns:1fr}}
-.hero p.grande{font-size:clamp(1.1rem,1rem+.6vw,1.35rem);color:var(--suave);max-width:34em}
-.tarjeta-datos{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:26px 28px;box-shadow:0 40px 80px -56px rgba(31,26,23,.5);display:flex;flex-direction:column;gap:14px}
-.tarjeta-datos dt{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--suave)}
-.tarjeta-datos dd{margin:0;font-weight:600;color:var(--carbon)}
-.bloque{padding:clamp(48px,7vw,96px) 0}
-.franja{background:#fff;border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
-.oscuro{background:var(--verde-oscuro);color:var(--piedra)}
-.oscuro h2,.oscuro h3{color:var(--marfil)}
-.oscuro a{color:var(--verde-suave)}
-.oscuro .boton{background:var(--marfil);color:var(--verde-oscuro)}
-.oscuro .boton:hover{color:var(--verde-oscuro)}
-.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.tarjeta{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:10px}
-.oscuro .tarjeta{background:rgba(248,245,239,.06);border-color:rgba(248,245,239,.16)}
-.tarjeta .etiqueta{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--verde)}
-.oscuro .tarjeta .etiqueta{color:var(--verde-suave)}
-.tarjeta p{margin:0;color:var(--suave);font-size:15.5px}
-.oscuro .tarjeta p{color:var(--piedra)}
-.pasos{counter-reset:paso;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;list-style:none;margin:0;padding:0}
-.pasos li{counter-increment:paso;display:flex;flex-direction:column;gap:8px}
-.pasos li::before{content:counter(paso);width:34px;height:34px;border-radius:50%;border:1.5px solid var(--verde);color:var(--verde);display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
-.oscuro .pasos li::before{border-color:var(--verde-suave);color:var(--verde-suave)}
-.pasos p{margin:0;color:var(--suave);font-size:15.5px}
-.oscuro .pasos p{color:var(--piedra)}
-blockquote{margin:0;padding:24px 28px;border-left:4px solid var(--verde);background:rgba(46,125,91,.08);border-radius:0 12px 12px 0;font-size:1.15rem;color:var(--carbon)}
-.faq details{border-bottom:1px solid var(--borde);padding:14px 0}
-.faq summary{list-style:none;cursor:pointer;font-weight:600;font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;color:var(--carbon);display:flex;justify-content:space-between;gap:16px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-weight:400;font-size:1.4rem;color:var(--verde)}
-.faq details[open] summary::after{content:"–"}
-.faq details p{margin:10px 0 0;color:var(--suave)}
-.formulario{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:clamp(24px,4vw,44px);display:flex;flex-direction:column;gap:18px;box-shadow:0 40px 80px -56px rgba(31,26,23,.45)}
-.campo{display:flex;flex-direction:column;gap:6px}
-.campo label{font-size:15px;font-weight:600;color:var(--carbon)}
-.campo input,.campo select{height:50px;padding:0 14px;border:1.5px solid var(--borde);border-radius:10px;font:inherit;font-size:16px;background:#fff;color:var(--texto)}
-.campo input:focus,.campo select:focus{border-color:var(--verde);outline:none}
-.dos-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:640px){.dos-col{grid-template-columns:1fr}}
-.opciones{display:flex;flex-wrap:wrap;gap:10px}
-.opciones label{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--borde);border-radius:10px;cursor:pointer;font-size:15.5px}
-.opciones input{accent-color:var(--verde)}
-.error{margin:0;padding:10px 12px;border-radius:8px;background:var(--error-fondo);color:var(--error);font-size:15px}
-.aviso-ok{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border-radius:10px;background:rgba(46,125,91,.1)}
-.aviso-ok .check{flex:0 0 44px;height:44px;border-radius:50%;background:var(--verde);display:inline-flex;align-items:center;justify-content:center}
-input[type=file]{font:inherit;font-size:15px}
-.suelto{padding:12px 14px;border:1.5px dashed #B7A896;border-radius:8px;display:flex;flex-direction:column;gap:6px}
-.pie{background:var(--carbon);color:var(--piedra);padding:44px 0;font-size:14.5px}
-.pie a{color:var(--marfil)}
-.pie .caja{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+
+body{margin:0;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:#16261D}a:hover{color:#3A4A66}
+.ps-root *{box-sizing:border-box}
+.ps-root,.ps-root *{font-variant-numeric:proportional-nums !important}
+.ps-root section{scroll-margin-top:96px}
+.ps-root h1,.ps-root h2,.ps-root h3{text-wrap:balance}
+.ps-root p,.ps-root li,.ps-root dd{text-wrap:pretty}
+.ps-root :focus-visible{outline:3px solid #16261D;outline-offset:3px;border-radius:6px}
+.ps-root .ps-dark :focus-visible{outline-color:#FFFFFF}
+.ps-nav{display:none}
+.ps-hcta{display:inline-flex}
+.ps-hphone{display:none}
+.ps-hbar{height:88px}
+.ps-lock{display:inline-flex;align-items:center;gap:18px}
+.ps-mark{width:46px;height:46px;flex:0 0 auto}
+.ps-firm{display:inline-flex;align-items:baseline;gap:8px;padding-left:18px;border-left:1px solid #D6DCE5}
+.ps-rw,.ps-fn{font-size:30px}
+.ps-fp,.ps-fa{font-size:20px}
+.ps-mbar{display:none}
+.ps-hero-docs{height:520px}
+.ps-deed{font-size:14px}
+.ps-viewer{position:sticky;top:112px}
+.ps-step{min-height:300px}
+.ps-btn{transition:filter .2s ease}
+.ps-btn:hover{filter:brightness(.95)}
+.ps-link .ps-arrow{transition:transform .25s ease}
+.ps-link:hover .ps-arrow{transform:translateX(3px)}
+.ps-faq summary{list-style:none;cursor:pointer}
+.ps-faq summary::-webkit-details-marker{display:none}
+.ps-plus{transition:transform .25s ease;flex:0 0 auto}
+.ps-faq details[open] .ps-plus{transform:rotate(45deg)}
+.ps-draw{background-size:100% 100%;animation:ps-draw 1300ms cubic-bezier(.3,.7,.2,1) 700ms both}
+@keyframes ps-draw{from{background-size:0% 100%}to{background-size:100% 100%}}
+.ps-docin{animation:ps-docin 380ms ease both}
+@keyframes ps-docin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.ex-tab{min-height:44px;padding:0 2px;border:0;border-bottom:2px solid transparent;background:transparent;font:inherit;font-size:16px;font-weight:600;color:#4B5568;cursor:pointer}
+.ex-tab[aria-pressed="true"]{color:#16261D;border-bottom-color:#16261D}
+.ex-tg{height:48px;padding:0 18px;border:1.5px solid #16261D;border-radius:10px;background:transparent;font:inherit;font-size:16px;font-weight:700;color:#16261D;cursor:pointer}
+.ex-tg[aria-pressed="true"]{background:#16261D;color:#FFFFFF}
+.ex:not([data-step="3"]) .ex-tg{display:none}
+.ex[data-step="3"] .ex-next{display:none}
+.ex-txt{display:none}
+.ex[data-step="1"] .ex-t1,.ex[data-step="2"] .ex-t2,.ex[data-step="3"] .ex-t3{display:block}
+.ex[data-path="abuso"] .ex-pa,.ex[data-path="bien"] .ex-pb{display:none !important}
+.ex-stage{display:flex;flex-direction:column;gap:22px}
+.ex-row{transition:opacity .5s ease,transform .5s ease}
+.ex[data-step="1"] .ex-r2,.ex[data-step="1"] .ex-r3,.ex[data-step="2"] .ex-r3{opacity:0;transform:translateY(10px);visibility:hidden}
+.ex-home{transform-origin:left center;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.ex[data-seen="0"] .ex-home{transform:scaleX(0)}
+.ex-ins{width:0;transition:width .7s cubic-bezier(.2,.7,.2,1)}
+.ex[data-step="3"][data-path="abuso"] .ex-ins{width:11.05%}
+.ex-ta{display:none}
+.ex[data-step="3"][data-path="abuso"] .ex-ta{display:inline}
+.ex[data-step="3"][data-path="abuso"] .ex-tb{display:none}
+.ex-aparte,.ex-dentro{transition:opacity .4s ease}
+.ex-aparte,.ex-dentro{opacity:0}
+.ex[data-step="3"][data-path="bien"] .ex-aparte,.ex[data-step="3"][data-path="abuso"] .ex-dentro{opacity:1}
+.ex-layer{position:absolute;inset:0;display:flex;align-items:flex-end;gap:3px}
+.ex-bar{flex:1 1 0;transform-origin:center bottom;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.ex:not([data-step="3"]) .ex-bar,.ex[data-path="abuso"] .ex-lb .ex-bar,.ex[data-path="bien"] .ex-la .ex-bar{transform:scaleY(0)}
+@media (prefers-reduced-motion:reduce){.ex *{transition:none !important}}
+@media (max-width:899px){.ps-hbar{height:auto;padding-top:10px;padding-bottom:10px}.ps-lock{flex-direction:column;align-items:flex-start;gap:3px}.ps-firm{padding-left:0;border-left:0;gap:5px}.ps-mark{width:34px;height:34px}.ps-rw{font-size:23px}.ps-fn{font-size:15px}.ps-fp,.ps-fa{font-size:12px}}
+@media (max-width:899px){
+.ps-hphone,.ps-hcta{display:none}
+.ps-mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:8px;padding:10px 12px;background:rgba(255,255,255,.97);border-top:1px solid #DCE2EA}
+.ps-root{padding-bottom:72px}
+.ps-hero-docs{height:560px}
+.ps-deed{font-size:12.5px}
+.ps-viewer{top:84px;background:#EEF1F5;padding:8px 0 12px}
+.ps-step{min-height:220px}
+}
+@media (prefers-reduced-motion:reduce){
+.ps-draw,.ps-docin{animation:none}
+.ps-btn,.ps-plus,.ps-link .ps-arrow{transition:none}
+}
 </style>
 </head>
 <body>
+<div class="ps-root" style="font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; color: #16261D; background: #FFFFFF; font-size: 18px; line-height: 1.55">
 
-<header>
-  <div class="caja barra">
-    <a class="logo" href="/accidentia/" aria-label="Accidentia, por Pacheco y Soto Abogados">
-      <span class="amp" aria-hidden="true">&amp;</span>
-      <span><span class="nombre">Accidentia</span><br><span class="sub">PACHECO&amp;SOTO ABOGADOS</span></span>
-    </a>
-    <nav aria-label="Secciones">
-      <a href="/">Despacho</a>
-      <a href="#reclamar">Qué se reclama</a>
-      <a href="#ofertas">La oferta de la aseguradora</a>
-      <a href="#despacho">Quién está detrás</a>
-      <a href="#metodo">Cómo trabajamos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <span style="display:flex;gap:16px;align-items:center;white-space:nowrap">
-      <a class="telefono" href="tel:+34915425307">915 425 307</a>
-      <a class="telefono" href="https://wa.me/34637597988" target="_blank" rel="noopener">WhatsApp 637 597 988</a>
-    </span>
-  </div>
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(255, 255, 255, 0.96); border-bottom: 1px solid #E1E6ED">
+<div class="ps-hbar" style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="#inicio" class="ps-lock" aria-label="Accidentia, por Pacheco&amp;Soto Abogados, ir al inicio" style="color: #16261D; text-decoration: none; white-space: nowrap">
+<span style="display: inline-flex; align-items: center; gap: 12px"><svg class="ps-mark" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="10" transform="rotate(-62 14 14)" style="fill: none; stroke: #16261D; stroke-width: 3.4; stroke-dasharray: 50 12.83"></circle><circle cx="14" cy="14" r="10" transform="rotate(-62 14 14)" style="fill: none; stroke: #32734A; stroke-width: 3.4; stroke-dasharray: 10.6 52.23; stroke-dashoffset: -51.1"></circle><text x="14" y="18" style="font-family: 'Schibsted Grotesk', Arial, sans-serif; font-size: 11px; font-weight: 800; fill: #16261D; text-anchor: middle">✚</text></svg><span class="ps-rw" style="font-weight: 800; letter-spacing: -0.03em; line-height: 1">Accidentia</span></span>
+<span class="ps-firm" style="line-height: 1"><span class="ps-fp" style="font-weight: 500; color: #4B5568">por</span><span class="ps-fn" style="font-weight: 800; letter-spacing: -0.02em">Pacheco<span style="font-family: 'Libre Caslon Text', Georgia, serif; font-style: italic; font-weight: 400; padding: 0 1px">&amp;</span>Soto</span><span class="ps-fa" style="font-weight: 500; color: #4B5568">Abogados</span></span>
+</a>
+<nav class="ps-nav" aria-label="Secciones de la página" style="align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<a href="#problema" style="text-decoration: none">Qué se reclama</a>
+<a href="#su-caso" style="text-decoration: none">Su caso</a>
+<a href="#como-trabajamos" style="text-decoration: none">Cómo trabajamos</a>
+<a href="#preguntas" style="text-decoration: none">Preguntas</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 18px">
+<a class="ps-hphone" href="tel:+34915425307" style="align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none; white-space: nowrap"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>915 425 307</a>
+<a class="ps-hphone" href="https://wa.me/34637597988" target="_blank" rel="noopener" style="align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none; white-space: nowrap"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="fill: currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A12 12 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>WhatsApp</a>
+<a class="ps-btn ps-hcta" href="#estudio" data-cta="cabecera" style="align-items: center; height: 44px; padding: 0 18px; border-radius: 10px; background: #32734A; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none; white-space: nowrap">Solicitar estudio gratuito</a>
+</div>
+</div>
+<div class="ps-tabs" role="tablist" aria-label="Tipos de reclamación" style="border-top: 1px solid #E1E6ED">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box; display: flex; gap: 8px; overflow-x: auto">
+<a role="tab" aria-selected="true" aria-current="page" href="#inicio" style="display: inline-flex; align-items: center; height: 46px; padding: 0 4px; border-bottom: 3px solid #32734A; color: #16261D; font-size: 15px; font-weight: 700; text-decoration: none; white-space: nowrap">Accidentes de tráfico e indemnizaciones</a>
+</div>
+</div>
 </header>
 
-<main>
-<section class="hero">
-  <div class="caja rejilla">
-    <div style="display:flex;flex-direction:column;gap:22px">
-      <p class="sobre" style="margin:0">Accidentes de tráfico · por Pacheco&amp;Soto Abogados</p>
-      <h1>Tras un accidente, la aseguradora le calcula su indemnización. Nadie se la revisa, salvo usted.</h1>
-      <p class="grande">Si ha sufrido lesiones en un accidente de tráfico, como conductor, pasajero, peatón o ciclista, le revisamos el caso: qué lesión tiene, cuánto tiempo seguirá tratándose, cuánto ha dejado de percibir y qué corresponde según el baremo vigente. Y si la oferta de la aseguradora se queda corta, reclamamos la diferencia.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:14px">
-        <a class="boton" href="#contacto">Solicitar estudio gratuito</a>
-        <a class="boton-linea" href="tel:+34915425307">Llamar al 915 425 307</a>
-        <a class="boton-linea" href="tel:+34637597988">Llamar al 637 597 988</a>
-        <a class="boton-linea" href="https://wa.me/34637597988?text=Hola%2C%20quiero%20consultar%20mi%20caso" target="_blank" rel="noopener">WhatsApp 637 597 988</a>
-      </div>
-      <p style="margin:0;font-size:14px;color:var(--suave)">Estudio inicial gratuito. Revisamos su caso y le decimos qué le corresponde antes de que firme nada.</p>
-    </div>
-    <dl class="tarjeta-datos" style="margin:0">
-      <div><dt>Servicio</dt><dd>Reclamación de lesiones y daños por accidente de tráfico</dd></div>
-      <div><dt>Despacho</dt><dd>Alberto Aguilera 35, 2º dcha., Madrid</dd></div>
-      <div><dt>Teléfono</dt><dd>915 425 307</dd></div>
-      <div><dt>Qué necesita</dt><dd>Parte, atestado o referencia del accidente e informe médico. Si no los tiene, le decimos cómo conseguirlos.</dd></div>
-    </dl>
-  </div>
+<main id="contenido">
+
+<section id="inicio" style="background: #EEF1F5; padding-top: clamp(48px, 6vw, 80px); padding-bottom: clamp(64px, 7vw, 104px); overflow: hidden">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box">
+<h1 style="margin: 0; max-width: 15.5em; font-size: clamp(2.5rem, 1.5rem + 3.2vw, 4.5rem); line-height: 1.02; letter-spacing: -0.03em; font-weight: 700">Tras un accidente, la aseguradora le calcula su indemnización. Nadie se la revisa, salvo usted.</h1>
+<div style="display: flex; flex-wrap: wrap; gap: clamp(40px, 5vw, 72px); align-items: flex-start; margin-top: clamp(32px, 4vw, 56px)">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; max-width: 34em; font-size: clamp(1.125rem, 1rem + 0.4vw, 1.3rem); line-height: 1.55; color: #2E3A50">Si ha sufrido lesiones en un accidente de tráfico, como conductor, pasajero, peatón o ciclista, le revisamos el caso: qué lesión tiene, cuánto tiempo seguirá tratándose, cuánto ha dejado de percibir y qué corresponde según el baremo vigente. Y si la oferta de la aseguradora se queda corta, reclamamos la diferencia.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px">
+<a class="ps-btn" href="#estudio" style="display: inline-flex; align-items: center; height: 56px; padding: 0 26px; border-radius: 10px; background: #32734A; color: #FFFFFF; font-size: 17px; font-weight: 700; text-decoration: none; box-shadow: inset 0 -2px 0 rgba(22, 38, 29, 0.18)">Solicitar estudio gratuito</a>
+<a href="tel:+34915425307" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px; font-weight: 600; color: #16261D; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Llamar al 915 425 307</a>
+</div>
+<p style="margin: 0; font-size: 15px; font-style: italic; color: #4B5568">Estudio inicial gratuito. Revisamos su caso y le decimos qué le corresponde antes de que firme nada.</p>
+</div>
+<div class="ps-hero-docs" role="img" aria-label="Fragmento de un informe médico de alta de ejemplo, con los 90 días impeditivos subrayados, sobre la oferta de liquidación de la aseguradora" style="flex: 1 1 440px; min-width: 0; position: relative">
+<div style="position: absolute; right: 0; top: 0; width: 72%; transform: rotate(4deg); transform-origin: 100% 0; background: #FFFFFF; border: 1px solid #D6DCE5; border-radius: 4px; box-shadow: 0 28px 50px -36px rgba(22, 38, 29, 0.55); padding: 20px 22px 24px; color: #2A3140; font-family: 'Libre Caslon Text', Georgia, serif">
+<p style="margin: 0; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #4B5568">INFORME MÉDICO DE ALTA</p>
+<p style="margin: 4px 0 14px; font-size: 13px; font-style: italic">Cervicalgia por latigazo. Evolución clínica.</p>
+<div style="display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 14px; font-size: 12.5px; line-height: 1.45">
+<span style="color: #4B5568">Días impedidos</span><span>90 días impeditivos totales</span>
+<span style="color: #4B5568">Días sin impedir</span><span style="font-variant-numeric: tabular-nums">15 días</span>
+<span style="color: #4B5568">Secuelas</span><span>Valoración pendiente</span>
+<span style="color: #4B5568">Perjuicio económico</span><span>42 días de baja laboral</span>
+</div>
+</div>
+<div style="position: absolute; left: 0; top: 70px; width: 86%; transform: rotate(-2deg); transform-origin: 0 0; background: #FFFFFF; border: 1px solid #D6DCE5; border-radius: 4px; box-shadow: 0 44px 80px -44px rgba(22, 38, 29, 0.6), 0 2px 0 rgba(22, 38, 29, 0.04); padding: 24px 28px 64px; color: #2A3140; font-family: 'Libre Caslon Text', Georgia, serif">
+<div style="border-left: 1px solid #E1E6ED; padding-left: 18px">
+<div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size: 11px; letter-spacing: 0.06em; color: #4B5568"><span>NOTARÍA</span><span>CN 7428136</span></div>
+<p style="margin: 14px 0 2px; text-align: center; font-size: 12.5px; font-weight: 700; letter-spacing: 0.06em">COMUNICACIÓN DE LIQUIDACIÓN DE INDEMNIZACIÓN</p>
+<p style="margin: 0 0 12px; text-align: center; font-size: 11.5px; letter-spacing: 0.04em">EXPEDIENTE 2026/08413</p>
+<p style="margin: 0 0 14px; font-size: 13px; font-style: italic">En Madrid, a veintiocho de mayo de dos mil veintiséis.</p>
+<div style="display: flex; flex-direction: column; gap: 7px; margin-bottom: 16px"><span style="display: block; height: 6px; width: 100%; border-radius: 3px; background: #E6EAF0"></span><span style="display: block; height: 6px; width: 92%; border-radius: 3px; background: #E6EAF0"></span><span style="display: block; height: 6px; width: 97%; border-radius: 3px; background: #E6EAF0"></span></div>
+<p style="margin: 0 0 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.03em">IMPORTANTE. CARÁCTER DEFINITIVO.</p>
+<p class="ps-deed" style="margin: 0; line-height: 1.75">Abonamos a usted la cantidad de <mark class="ps-draw" style="color: inherit; background-color: transparent; background-image: linear-gradient(to bottom, transparent 10%, rgba(50, 115, 74, 0.72) 10%, rgba(50, 115, 74, 0.72) 92%, transparent 92%); background-repeat: no-repeat; background-position: 0 0; padding: 0 2px; -webkit-box-decoration-break: clone; box-decoration-break: clone">3.180,00 euros en concepto de indemnización por las lesiones sufridas, como liquidación definitiva</mark>.</p>
+<div style="display: flex; flex-direction: column; gap: 7px; margin-top: 16px"><span style="display: block; height: 6px; width: 95%; border-radius: 3px; background: #E6EAF0"></span><span style="display: block; height: 6px; width: 58%; border-radius: 3px; background: #E6EAF0"></span></div>
+</div>
+<div style="position: absolute; right: 24px; bottom: 20px; transform: rotate(-9deg); border: 2px solid #8A1C1C; outline: 1px solid #8A1C1C; outline-offset: 2px; padding: 4px 10px; color: #8A1C1C; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.14em; opacity: 0.85">CONFORMIDAD</div>
+</div>
+<p style="position: absolute; left: 2px; bottom: 0; margin: 0; font-size: 13px; color: #4B5568">Documento de ejemplo. Cifras ilustrativas.</p>
+</div>
+</div>
+</div>
 </section>
 
-<section id="reclamar" class="bloque franja">
-  <div class="caja" style="display:flex;flex-direction:column;gap:28px">
-    <div>
-      <p class="sobre" style="margin:0 0 8px">Qué se reclama</p>
-      <h2>Su lesión vale lo que dice el baremo, no lo que dice el teléfono de la aseguradora</h2>
-      <p style="max-width:46em;color:var(--suave)">Las indemnizaciones por accidente de tráfico en España se calculan con el sistema legal de valoración de daños (Real Decreto Legislativo 8/2004, texto refundido de la Ley sobre responsabilidad civil y seguro en la circulación de vehículos a motor). Ese sistema contempla más partidas de las que suelen incluir las primeras ofertas. Estas son las que revisamos:</p>
-    </div>
-    <div class="tarjetas">
-      <div class="tarjeta">
-        <span class="etiqueta">Días de lesión</span>
-        <h3>Días impedidos y no impedidos</h3>
-        <p>El baremo distingue los días en que la lesión le impidió desarrollar sus actividades habituales de los que no. Cada día tiene un valor, y contar mal los días es una de las rebajas más frecuentes.</p>
-      </div>
-      <div class="tarjeta">
-        <span class="etiqueta">Secuelas</span>
-        <h3>Perjuicios que quedan</h3>
-        <p>Cuando la lesión no desaparece del todo, hay que valorarla médicamente y después económicamente. Aceptar una oferta antes de saber si habrá secuela puede cerrar esa puerta para siempre.</p>
-      </div>
-      <div class="tarjeta">
-        <span class="etiqueta">Perjuicio económico</span>
-        <h3>Bajas, tratamientos y gastos</h3>
-        <p>Salario dejado de percibir, bajas autónomos y trabajadores por cuenta propia, tratamientos, desplazamientos y ayudas necesarias durante la recuperación. Se calculan con datos, no con aproximaciones.</p>
-      </div>
-      <div class="tarjeta">
-        <span class="etiqueta">Daños del vehículo</span>
-        <h3>Reparación, valor de mercado y pérdida</h3>
-        <p>Si el vehículo quedó dañado o perdido, revisamos la oferta de valoración, los gastos de sustitución y los perjuicios por su inmovilización.</p>
-      </div>
-      <div class="tarjeta">
-        <span class="etiqueta">Perjuicios personales</span>
-        <h3>Daño moral y familiares</h3>
-        <p>El baremo reconoce indemnizaciones específicas para el perjuicio moral de la víctima y para determinados perjuicios de familiares, como el acompañante o los que quedan a su cargo.</p>
-      </div>
-      <div class="tarjeta">
-        <span class="etiqueta">Sin seguro identificado</span>
-        <h3>Fondo de Garantía</h3>
-        <p>Si el responsable no identificado o sin seguro, la reclamación se dirige al Consorcio de Compensación de Seguros, con sus propios plazos y trámites.</p>
-      </div>
-    </div>
-  </div>
+<section id="equipo" aria-labelledby="h-despacho" style="background: #FFFFFF; padding-top: clamp(64px, 7vw, 96px); padding-bottom: clamp(64px, 7vw, 96px); border-bottom: 1px solid #E1E6ED">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 32px 64px; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 16px; min-width: 0">
+<p style="margin: 0; font-size: 15px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #4B5568">Quién está detrás</p>
+<h2 id="h-despacho" style="margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700">Accidentia es un servicio del despacho, no una plataforma sin nadie detrás.</h2>
+</div>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #2E3A50">Accidentia es la línea de accidentes de tráfico de Pacheco&amp;Soto Abogados, un despacho de Madrid con 29 años de ejercicio. Su caso lo estudian y lo firman abogados colegiados, con nombre y apellidos, a los que puede llamar o visitar en el despacho.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 20px 40px; margin-top: 40px; padding: 24px 0; border-top: 1px solid #E1E6ED; border-bottom: 1px solid #E1E6ED">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0"><span style="font-size: 14px; color: #4B5568">Despacho</span><span style="font-size: 17px; font-weight: 700">Alberto Aguilera 35, 2º dcha., Madrid</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0"><span style="font-size: 14px; color: #4B5568">Teléfono</span><span style="font-size: 17px; font-weight: 700"><a href="tel:+34915425307" style="color: #16261D">915 425 307</a></span></div>
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0"><span style="font-size: 14px; color: #4B5568">Experiencia</span><span style="font-size: 17px; font-weight: 700">29 años de ejercicio</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0"><span style="font-size: 14px; color: #4B5568">Colegio profesional</span><span style="font-size: 17px; font-weight: 700">Ilustre Colegio de la Abogacía de Madrid</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 40px; margin-top: 40px">
+<article style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 24px">
+<img src="https://reintegra.pachecosotoabogados.es/fotos/gonzalo-pacheco-velasco.jpg" alt="Gonzalo Pacheco Velasco" width="800" height="775" loading="lazy" decoding="async" style="flex: 0 0 160px; width: 160px; height: auto; aspect-ratio: 800 / 775; border-radius: 6px; display: block; box-shadow: 0 18px 40px -28px rgba(22, 38, 29, 0.55)">
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 24px; line-height: 1.2">Gonzalo Pacheco Velasco</h3>
+<p style="margin: 0; font-size: 16px; color: #4B5568">Socio. Colegiado nº 53742 del Ilustre Colegio de la Abogacía de Madrid.</p>
+</div>
+</article>
+<article style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 24px">
+<img src="https://reintegra.pachecosotoabogados.es/fotos/beatriz-soto-ortiz.jpg" alt="Beatriz Soto Ortiz" width="800" height="774" loading="lazy" decoding="async" style="flex: 0 0 160px; width: 160px; height: auto; aspect-ratio: 800 / 774; border-radius: 6px; display: block; box-shadow: 0 18px 40px -28px rgba(22, 38, 29, 0.55)">
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 24px; line-height: 1.2">Beatriz Soto Ortiz</h3>
+<p style="margin: 0; font-size: 16px; color: #4B5568">Socia. Colegiada nº 46426 del Ilustre Colegio de la Abogacía de Madrid.</p>
+</div>
+</article>
+</div>
+<div style="margin-top: 40px; display: flex; flex-direction: column; gap: 14px; width: 100%">
+<h3 style="margin: 0; font-size: 24px; line-height: 1.2">Especialistas en lesiones e indemnizaciones por accidente de tráfico</h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #2E3A50">Llevamos años defendiendo a quienes sufren un accidente de tráfico frente a las aseguradoras: lesiones, bajas laborales, secuelas y daños en el vehículo. Sabemos cómo liquidan las compañías, qué documentación piden los juzgados y qué partidas del baremo suelen quedar fuera de la primera oferta.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #2E3A50">Nos ocupamos de cada asunto de principio a fin, desde la comunicación a la aseguradora y la valoración de la lesión hasta la negociación, el juicio y el cobro efectivo de la indemnización. Por eso estudiamos cada caso personalmente antes de recomendarle si merece la pena reclamar.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; margin-top: 40px; padding: 22px 24px; border-radius: 10px; background: #EEF1F5">
+<p style="margin: 0; flex: 1 1 420px; min-width: 0; font-size: 16px; line-height: 1.55; color: #2E3A50"><strong style="color: #16261D">Compruébelo usted mismo.</strong> Todos los abogados colegiados de España aparecen en el Censo General de Letrados del Consejo General de la Abogacía Española. Busque «Gonzalo Pacheco Velasco» o «Beatriz Soto Ortiz».</p>
+<a href="https://www.abogacia.es/servicios/ciudadanos/censo-general-de-letrados/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 20px; border-radius: 8px; border: 1.5px solid #16261D; background: #FFFFFF; color: #16261D; font-size: 16px; font-weight: 700; text-decoration: none; white-space: nowrap">Ver en el Censo de Letrados<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">(se abre en una ventana nueva)</span></a>
+</div>
+</div>
 </section>
 
-<section id="ofertas" class="bloque">
-  <div class="caja" style="display:flex;flex-direction:column;gap:24px">
-    <div>
-      <p class="sobre" style="margin:0 0 8px">Por qué revisar la oferta</p>
-      <h2>El primer número casi nunca es el bueno</h2>
-      <p style="max-width:46em;color:var(--suave)">Las aseguradoras liquidan rápido y con la información mínima: valoran la lesión antes de que se estabilice, cuentan solo los días que constan en sus partes y aplican el baremo a su manera. No es mala fe: es su forma de trabajar. Pero aceptar esa cifra y firmar su conformidad extingue la reclamación.</p>
-    </div>
-    <blockquote>Firmar la conformidad con una indemnización cierra el caso, incluso si después aparece una secuela que nadie valoró. Antes de firmar, sepa qué está firmando.</blockquote>
-    <p style="max-width:46em;color:var(--suave)">Nuestro trabajo empieza por ordenar la prueba: informes médicos, partes de baja, nóminas, atestado y correspondencia con la aseguradora. Con eso calculamos lo que corresponde según el baremo y se lo explicamos por escrito. Si la oferta es correcta, se lo diremos y no cobraremos honorarios por decirle que firme. Si se queda corta, negociamos o demandamos.</p>
-  </div>
+<section id="problema" style="background: #FFFFFF; padding-top: clamp(72px, 8vw, 112px); padding-bottom: clamp(72px, 8vw, 112px)">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box">
+<div style="max-width: 760px; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700">Su lesión vale lo que dice el baremo, no lo que dice el teléfono de la aseguradora</h2>
+<p style="margin: 0; color: #2E3A50">Las indemnizaciones por accidente de tráfico en España se calculan con el sistema legal de valoración de daños (Real Decreto Legislativo 8/2004, texto refundido de la Ley sobre responsabilidad civil y seguro en la circulación de vehículos a motor). Ese sistema contempla más partidas de las que suelen incluir las primeras ofertas. Estas son las que revisamos:</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 24px; margin-top: 48px">
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 24px 26px; border-radius: 12px; background: #FFFFFF; border: 1px solid #D6DCE5"><p style="margin: 0; font-size: 17px; font-weight: 700">Días de lesión</p><p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #2E3A50">El baremo distingue los días en que la lesión le impidió desarrollar sus actividades habituales de los que no. Cada día tiene un valor, y contar mal los días es una de las rebajas más frecuentes.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 24px 26px; border-radius: 12px; background: #FFFFFF; border: 1px solid #D6DCE5"><p style="margin: 0; font-size: 17px; font-weight: 700">Secuelas</p><p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #2E3A50">Cuando la lesión no desaparece del todo, hay que valorarla médicamente y después económicamente. Aceptar una oferta antes de saber si habrá secuela puede cerrar esa puerta para siempre.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 24px 26px; border-radius: 12px; background: #FFFFFF; border: 1px solid #D6DCE5"><p style="margin: 0; font-size: 17px; font-weight: 700">Perjuicio económico</p><p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #2E3A50">Salario dejado de percibir, bajas de autónomos y trabajadores por cuenta propia, tratamientos, desplazamientos y ayudas necesarias durante la recuperación. Se calculan con datos, no con aproximaciones.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 24px 26px; border-radius: 12px; background: #FFFFFF; border: 1px solid #D6DCE5"><p style="margin: 0; font-size: 17px; font-weight: 700">Daños del vehículo</p><p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #2E3A50">Si el vehículo quedó dañado o perdido, revisamos la oferta de valoración, los gastos de sustitución y los perjuicios por su inmovilización.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 24px 26px; border-radius: 12px; background: #FFFFFF; border: 1px solid #D6DCE5"><p style="margin: 0; font-size: 17px; font-weight: 700">Perjuicios personales</p><p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #2E3A50">El baremo reconoce indemnizaciones específicas para el perjuicio moral de la víctima y para determinados perjuicios de familiares, como el acompañante o las personas a su cargo.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 24px 26px; border-radius: 12px; background: #FFFFFF; border: 1px solid #D6DCE5"><p style="margin: 0; font-size: 17px; font-weight: 700">Sin seguro identificado</p><p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #2E3A50">Si el responsable no está identificado o no tiene seguro, la reclamación se dirige al Consorcio de Compensación de Seguros, con sus propios plazos y trámites.</p></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 24px; margin-top: 32px; padding: clamp(20px, 3vw, 32px); border-radius: 12px; background: #EEF1F5">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 26px 28px; border-radius: 10px; background: #FFFFFF; border: 1px solid #D6DCE5">
+<p style="margin: 0; font-size: 15px; font-weight: 700; color: #4B5568">La oferta de la aseguradora</p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 15.5px; color: #2E3A50; font-variant-numeric: tabular-nums"><span>Días impeditivos reconocidos: 45</span><span>Secuelas: no valora</span><span>Baja laboral: no incluida</span></div>
+<p style="margin: 0; font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums">3.180,00&nbsp;€</p>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 26px 28px; border-radius: 10px; background: #FFFFFF; border: 1.5px solid #16261D">
+<p style="margin: 0; font-size: 15px; font-weight: 700; color: #4B5568">Lo que corresponde según el baremo</p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 15.5px; color: #2E3A50; font-variant-numeric: tabular-nums"><span>90 días impeditivos + 15 sin impedir</span><span>Secuela valorada: 3 puntos</span><span>42 días de baja laboral</span></div>
+<p style="margin: 0; font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums">18.540,00&nbsp;€</p>
+</div>
+</div>
+<p style="margin: 32px 0 0; font-size: 14px; color: #4B5568">Cifras de ejemplo: latigazo cervical con 90 días impeditivos, secuela de 3 puntos y 42 días de baja, valoradas con el sistema legal de valoración vigente.</p>
+</div>
+</div>
 </section>
 
-<section id="despacho" class="bloque oscuro">
-  <div class="caja" style="display:flex;flex-direction:column;gap:26px">
-    <div>
-      <p class="sobre" style="margin:0 0 8px;color:var(--verde-suave)">Quién está detrás</p>
-      <h2>Accidentia es un servicio del despacho, no una plataforma sin nadie detrás</h2>
-    </div>
-    <div class="tarjetas">
-      <div class="tarjeta">
-        <h3>Gonzalo Pacheco Velasco</h3>
-        <p>Socio. Colegiado nº 53742 del Ilustre Colegio de la Abogacía de Madrid.</p>
-      </div>
-      <div class="tarjeta">
-        <h3>Beatriz Soto Ortiz</h3>
-        <p>Socia. Colegiada nº 46426 del Ilustre Colegio de la Abogacía de Madrid.</p>
-      </div>
-      <div class="tarjeta">
-        <h3>Pacheco&amp;Soto Abogados</h3>
-        <p>Despacho de Madrid con 29 años de ejercicio, especializado en litigación frente a bancos y aseguradoras. Accidentia es su línea de accidentes de tráfico.</p>
-        <a class="enlace" style="font-weight:700;color:var(--verde-suave)" href="/">pachecosotoabogados.es →</a>
-      </div>
-    </div>
-    <p style="max-width:46em">Su expediente lo estudia y lo firma un abogado colegiado, con nombre y apellidos, al que puede llamar o visitar en el despacho. Compruébelo en el <a href="https://www.abogacia.es/servicios/ciudadanos/censo-general-de-letrados/" rel="noopener" target="_blank">Censo General de Letrados del Consejo General de la Abogacía Española</a>.</p>
-  </div>
+<section class="ps-dark" aria-labelledby="h-relevante" style="background: #16261D; color: #FFFFFF; padding-top: clamp(72px, 8vw, 104px); padding-bottom: clamp(72px, 8vw, 104px)">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box; display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(40px, 5vw, 72px)">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<h2 id="h-relevante" style="margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700; color: #FFFFFF">El primer número casi nunca es el bueno</h2>
+<p style="margin: 0; color: #D3D9E3">Las aseguradoras liquidan rápido y con la información mínima: valoran la lesión antes de que se estabilice, cuentan solo los días que constan en sus partes y aplican el baremo a su manera. No es mala fe: es su forma de trabajar. Pero aceptar esa cifra y firmar su conformidad extingue la reclamación.</p>
+<p style="margin: 0; color: #D3D9E3">Nuestro trabajo empieza por ordenar la prueba: informes médicos, partes de baja, nóminas, atestado y correspondencia con la aseguradora. Con eso calculamos lo que corresponde según el baremo y se lo explicamos por escrito. Si la oferta es correcta, se lo diremos; si se queda corta, negociamos o demandamos.</p>
+<p style="margin: 0; font-size: 14px; color: #AEB8C6">Información actualizada a octubre de 2026.</p>
+</div>
+<figure style="flex: 1 1 520px; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 16px">
+<figcaption style="font-size: 15px; font-weight: 700; color: #32734A">Por qué importa firmar solo sabiendo qué se firma</figcaption>
+<blockquote style="margin: 0; font-size: clamp(1.5rem, 1rem + 1.5vw, 2.35rem); line-height: 1.24; letter-spacing: -0.015em; font-weight: 600; color: #FFFFFF"><p style="margin: 0">Firmar la conformidad con una indemnización cierra el caso, incluso si después aparece una secuela que nadie valoró. Antes de firmar, sepa qué está firmando.</p></blockquote>
+</figure>
+</div>
 </section>
 
-<section id="metodo" class="bloque franja">
-  <div class="caja" style="display:flex;flex-direction:column;gap:26px">
-    <div>
-      <p class="sobre" style="margin:0 0 8px">Cómo trabajamos</p>
-      <h2>De la urgencia al alta médica, y del alta al cobro</h2>
-    </div>
-    <ol class="pasos">
-      <li><h3>Estudio inicial gratuito</h3><p>Recogemos lo que tiene (parte, atestado, informes) y le decimos qué se puede reclamar y con qué plazos. Si le falta documentación, le indicamos cómo pedirla.</p></li>
-      <li><h3>Comunicación a la aseguradora</h3><p>Abrimos la reclamación frente a la compañía responsable y nos identificamos como su representación, para que la negociación no se haga directamente con usted.</p></li>
-      <li><h3>Seguimiento de su lesión</h3><p>No se puede valorar bien una lesión que aún no se ha estabilizado. Seguimos su evolución médica hasta el alta, que es cuando la indemnización puede calcularse de verdad.</p></li>
-      <li><h3>Cálculo conforme al baremo</h3><p>Con el informe de alta valoramos cada partida: días, secuelas, perjuicios económicos y personales. Le explicamos el cálculo, no solo la cifra.</p></li>
-      <li><h3>Oferta o demanda</h3><p>Si la aseguradora ofrece lo que corresponde, se lo diremos. Si no, presentamos demanda. Usted decide siempre si acepta una oferta o sigue el procedimiento.</p></li>
-      <li><h3>Cobro y cierre</h3><p>Seguimos el expediente hasta el abono efectivo de la indemnización.</p></li>
-    </ol>
-    <div style="background:#fff;border:1px solid var(--borde);border-radius:14px;padding:24px 26px;display:flex;flex-direction:column;gap:8px">
-      <h3 style="margin:0">Honorarios</h3>
-      <p style="margin:0;color:var(--suave)">El estudio inicial es gratuito. Si reclamamos, trabajamos con honorarios pactados por escrito en la hoja de encargo antes de empezar, sin letra pequeña. Si su caso no compensa, se lo diremos y no lo empezaremos.</p>
-    </div>
-  </div>
+<section id="su-caso" style="background: #EEF1F5; padding-top: clamp(72px, 8vw, 112px); padding-bottom: clamp(72px, 8vw, 112px)">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box">
+<div style="max-width: 760px; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700">Qué revisamos de su expediente</h2>
+<p style="margin: 0; color: #2E3A50">Puede que la aseguradora le haya dicho que su caso ya está liquidado y que no hay nada que hacer. No siempre es así: lo que corresponde depende de la documentación médica y de cómo se aplique el baremo.</p>
+<p style="margin: 0; color: #2E3A50">Cada partida de la indemnización se acredita con un documento. Estos son los que examinamos y lo que buscamos en ellos:</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(24px, 4vw, 56px); margin-top: 56px">
+
+<div class="ps-viewer" style="flex: 1 1 480px; min-width: 0; z-index: 2">
+
+<div data-doc="0">
+<figure class="ps-docin" style="margin: 0; background: #FFFFFF; border: 1px solid #D6DCE5; border-radius: 6px; box-shadow: 0 36px 64px -44px rgba(22, 38, 29, 0.55); overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 22px; border-bottom: 1px solid #E1E6ED; font-size: 14px">
+<span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path></svg>Informe médico de alta</span>
+<span style="color: #4B5568">Documento de ejemplo</span>
+</div>
+<div style="padding: 26px 28px 28px; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 15px; line-height: 1.75; color: #2A3140">
+<p style="margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: 0.04em">PARTE DE ALTA. EVOLUCIÓN CLÍNICA.</p>
+<p style="margin: 0 0 18px">La paciente presenta cervicalgia por latigazo cervical, con <mark style="color: inherit; background-color: rgba(50, 115, 74, 0.72); padding: 0 3px; border-radius: 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone">90 días de impedimento total</mark> y 15 días sin impedimento.</p>
+<p style="margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: 0.04em">ALTA. SECUELAS.</p>
+<p style="margin: 0">Se aconseja <mark style="color: inherit; background-color: rgba(50, 115, 74, 0.72); padding: 0 3px; border-radius: 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone">valoración de secuela de 3 puntos</mark> a los seis meses del alta.</p>
+</div>
+<figcaption style="display: flex; align-items: flex-start; gap: 12px; padding: 16px 22px; background: rgba(50, 115, 74, 0.2); border-top: 1px solid #E1E6ED; font-size: 16px; line-height: 1.45; color: #16261D"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg><span>El alta fija los días impedidos y apunta las secuelas: de este documento depende casi toda la indemnización.</span></figcaption>
+</figure>
+</div>
+<div data-doc="1" hidden>
+<figure class="ps-docin" style="margin: 0; background: #FFFFFF; border: 1px solid #D6DCE5; border-radius: 6px; box-shadow: 0 36px 64px -44px rgba(22, 38, 29, 0.55); overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 22px; border-bottom: 1px solid #E1E6ED; font-size: 14px">
+<span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path></svg>Oferta de la aseguradora</span>
+<span style="color: #4B5568">Documento de ejemplo</span>
+</div>
+<div style="padding: 24px 26px 26px; font-family: 'Libre Caslon Text', Georgia, serif; color: #2A3140">
+<p style="margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: 0.04em">LIQUIDACIÓN DE INDEMNIZACIÓN</p>
+<div style="display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 10px 18px; font-size: 15px; line-height: 1.5">
+<span style="color: #4B5568">Lesionado</span><span>Conductor del vehículo</span>
+<span style="color: #4B5568">Cantidad ofrecida</span><span><mark style="color: inherit; background-color: rgba(50, 115, 74, 0.72); padding: 0 3px; border-radius: 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone">3.180,00&nbsp;€</span>
+<span style="color: #4B5568">Concepto</span><span><mark style="color: inherit; background-color: rgba(50, 115, 74, 0.72); padding: 0 3px; border-radius: 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone">Liquidación definitiva, sujeto a conformidad</span>
+<span style="color: #4B5568">Días impeditivos reconocidos</span><span>45</span>
+<span style="color: #4B5568">Secuelas</span><span>No valora</span>
+</div>
+</div>
+<figcaption style="display: flex; align-items: flex-start; gap: 12px; padding: 16px 22px; background: rgba(50, 115, 74, 0.2); border-top: 1px solid #E1E6ED; font-size: 16px; line-height: 1.45; color: #16261D"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg><span>La oferta reconoce la mitad de los días y no valora la secuela: menos de la quinta parte de lo que corresponde.</span></figcaption>
+</figure>
+</div>
+<div data-doc="2" hidden>
+<figure class="ps-docin" style="margin: 0; background: #FFFFFF; border: 1px solid #D6DCE5; border-radius: 6px; box-shadow: 0 36px 64px -44px rgba(22, 38, 29, 0.55); overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 22px; border-bottom: 1px solid #E1E6ED; font-size: 14px">
+<span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path></svg>Parte amistoso o atestado</span>
+<span style="color: #4B5568">Documento de ejemplo</span>
+</div>
+<div style="padding: 24px 26px 26px; font-family: 'Libre Caslon Text', Georgia, serif; color: #2A3140">
+<p style="margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: 0.04em">DECLARACIÓN AMISTOSA DE ACCIDENTE</p>
+<div style="display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 10px 18px; font-size: 15px; line-height: 1.5">
+<span style="color: #4B5568">Fecha y lugar</span><span>12/04/2026, M-30, kilómetro 8</span>
+<span style="color: #4B5568">Vehículo contrario</span><span>Identificado y con seguro en vigor</span>
+<span style="color: #4B5568">Testigos</span><span><mark style="color: inherit; background-color: rgba(50, 115, 74, 0.72); padding: 0 3px; border-radius: 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone">Ninguno</span>
+<span style="color: #4B5568">Circunstancias</span><span>Frenazo brusco del vehículo precedente</span>
+<span style="color: #4B5568">Lesionados</span><span>La conductora del vehículo asegurado</span>
+</div>
+</div>
+<figcaption style="display: flex; align-items: flex-start; gap: 12px; padding: 16px 22px; background: rgba(50, 115, 74, 0.2); border-top: 1px solid #E1E6ED; font-size: 16px; line-height: 1.45; color: #16261D"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg><span>Del parte depende a quién se reclama y en qué proporción: conviene tenerlo antes de que desaparezca.</span></figcaption>
+</figure>
+</div>
+<div data-doc="3" hidden>
+<figure class="ps-docin" style="margin: 0; background: #FFFFFF; border: 1px solid #D6DCE5; border-radius: 6px; box-shadow: 0 36px 64px -44px rgba(22, 38, 29, 0.55); overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 22px; border-bottom: 1px solid #E1E6ED; font-size: 14px">
+<span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path></svg>Partes de baja y nóminas</span>
+<span style="color: #4B5568">Documento de ejemplo</span>
+</div>
+<div style="padding: 24px 26px 26px; font-family: 'Libre Caslon Text', Georgia, serif; color: #2A3140">
+<p style="margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: 0.04em">PERJUICIO ECONÓMICO. ACREDITACIÓN</p>
+<div style="display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 10px 18px; font-size: 15px; line-height: 1.5; font-variant-numeric: tabular-nums">
+<span style="color: #4B5568">Días de baja laboral</span><span>42</span>
+<span style="color: #4B5568">Salario diario</span><span>98,50&nbsp;€</span>
+<span style="color: #4B5568">Total dejado de percibir</span><span>4.137,00&nbsp;€</span>
+<span style="color: #4B5568">Fisioterapia y desplazamientos</span><span>1.803,00&nbsp;€</span>
+<span style="color: #4B5568">Perjuicio económico total</span><span><mark style="color: inherit; background-color: rgba(50, 115, 74, 0.72); padding: 0 3px; border-radius: 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone">5.940,00&nbsp;€</span>
+<span style="color: #4B5568">Incluido en la oferta</span><span><mark style="color: inherit; background-color: rgba(50, 115, 74, 0.72); padding: 0 3px; border-radius: 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone">No</span>
+</div>
+</div>
+<figcaption style="display: flex; align-items: flex-start; gap: 12px; padding: 16px 22px; background: rgba(50, 115, 74, 0.2); border-top: 1px solid #E1E6ED; font-size: 16px; line-height: 1.45; color: #16261D"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg><span>El perjuicio económico se acredita con datos: nóminas, partes de baja y facturas.</span></figcaption>
+</figure>
+</div>
+<div data-doc="4" hidden>
+<figure class="ps-docin" style="margin: 0; background: #FFFFFF; border: 1px solid #D6DCE5; border-radius: 6px; box-shadow: 0 36px 64px -44px rgba(22, 38, 29, 0.55); overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 22px; border-bottom: 1px solid #E1E6ED; font-size: 14px">
+<span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path></svg>Baremo: liquidación correcta</span>
+<span style="color: #4B5568">Documento de ejemplo</span>
+</div>
+<div style="padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 18px">
+<div style="overflow-x: auto">
+<table style="width: 100%; min-width: 440px; border-collapse: collapse; font-size: 13.5px; line-height: 1.4; font-variant-numeric: tabular-nums; color: #2A3140">
+<thead>
+<tr>
+<th scope="col" style="padding: 6px 8px; text-align: left; font-weight: 600; color: #4B5568; border-bottom: 1px solid #D6DCE5">Partida</th>
+<th scope="col" style="padding: 6px 8px; text-align: right; font-weight: 600; color: #4B5568; border-bottom: 1px solid #D6DCE5">Oferta</th>
+<th scope="col" style="padding: 6px 8px; text-align: right; font-weight: 600; color: #4B5568; border-bottom: 1px solid #D6DCE5">Corresponde</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding: 6px 8px">Días impedidos</td><td style="padding: 6px 8px; text-align: right">45</td><td style="padding: 6px 8px; text-align: right">90</td></tr>
+<tr><td style="padding: 6px 8px">Días sin impedir</td><td style="padding: 6px 8px; text-align: right">15</td><td style="padding: 6px 8px; text-align: right">15</td></tr>
+<tr><td style="padding: 6px 8px">Secuela (3 puntos)</td><td style="padding: 6px 8px; text-align: right">—</td><td style="padding: 6px 8px; text-align: right">4.980,00&nbsp;€</td></tr>
+<tr><td style="padding: 6px 8px">Perjuicio económico</td><td style="padding: 6px 8px; text-align: right">—</td><td style="padding: 6px 8px; text-align: right">5.940,00&nbsp;€</td></tr>
+<tr style="background: rgba(50, 115, 74, 0.2)"><td style="padding: 6px 8px; font-weight: 700">Total</td><td style="padding: 6px 8px; text-align: right; font-weight: 700">3.180,00&nbsp;€</td><td style="padding: 6px 8px; text-align: right; font-weight: 700">18.540,00&nbsp;€</td></tr>
+</tbody>
+</table>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700">Lo que la oferta cubre del total</p>
+<div style="display: flex; height: 26px; border: 1.5px solid #16261D; border-radius: 4px; overflow: hidden">
+<span style="flex: 0 0 17.2%; background: #32734A"></span>
+<span style="flex: 1 1 auto; background: #C2CAD6"></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; font-size: 14px; font-variant-numeric: tabular-nums"><span>Ofrecido: 3.180&nbsp;€</span><span style="font-weight: 700">Corresponde: 18.540&nbsp;€</span></div>
+</div>
+</div>
+<figcaption style="display: flex; align-items: flex-start; gap: 12px; padding: 16px 22px; background: rgba(50, 115, 74, 0.2); border-top: 1px solid #E1E6ED; font-size: 16px; line-height: 1.45; color: #16261D"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg><span>Sobre el total que corresponde, la primera oferta cubría menos de una quinta parte.</span></figcaption>
+</figure>
+</div>
+
+</div>
+
+<ol style="flex: 1 1 400px; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px">
+
+<li class="ps-step" data-crit="0" style="display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 28px; border-radius: 14px; border-width: 1.5px; border-style: solid; transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease; border-color: #16261D; background-color: #FFFFFF; box-shadow: 0 18px 40px -28px rgba(22, 38, 29, 0.55)">
+<p style="margin: 0; display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #4B5568"><span aria-hidden="true" data-dot="0" style="width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid #16261D; background: #32734A"></span>En el informe médico de alta</p>
+<h3 style="margin: 0; font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.6rem); line-height: 1.22; font-weight: 700">Cuántos días impeditivos reconoce y si apunta secuelas</h3>
+<p style="margin: 0; color: #2E3A50">Los días impeditivos valen más del doble que los no impedidos: contarlos mal rebaja mucho la indemnización.</p>
+<button type="button" class="ps-link" data-pick="0" aria-pressed="true" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0; border: 0; background: transparent; font: inherit; font-size: 16px; font-weight: 600; color: #16261D; text-decoration: underline; text-underline-offset: 4px; cursor: pointer">Ver en el documento<svg class="ps-arrow" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></button>
+</li>
+
+<li class="ps-step" data-crit="1" style="display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 28px; border-radius: 14px; border-width: 1.5px; border-style: solid; transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease; border-color: rgba(22, 38, 29, 0.14); background-color: transparent; box-shadow: none">
+<p style="margin: 0; display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #4B5568"><span aria-hidden="true" data-dot="1" style="width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid #16261D; background: #C2CAD6"></span>En la oferta de la aseguradora</p>
+<h3 style="margin: 0; font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.6rem); line-height: 1.22; font-weight: 700">Si la cantidad es liquidación definitiva y pide su conformidad</h3>
+<p style="margin: 0; color: #2E3A50">Si firma la conformidad, la reclamación se extingue aunque después aparezca una secuela.</p>
+<button type="button" class="ps-link" data-pick="1" aria-pressed="false" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0; border: 0; background: transparent; font: inherit; font-size: 16px; font-weight: 600; color: #16261D; text-decoration: underline; text-underline-offset: 4px; cursor: pointer">Ver en el documento<svg class="ps-arrow" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></button>
+</li>
+
+<li class="ps-step" data-crit="2" style="display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 28px; border-radius: 14px; border-width: 1.5px; border-style: solid; transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease; border-color: rgba(22, 38, 29, 0.14); background-color: transparent; box-shadow: none">
+<p style="margin: 0; display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #4B5568"><span aria-hidden="true" data-dot="2" style="width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid #16261D; background: #C2CAD6"></span>En el parte o el atestado</p>
+<h3 style="margin: 0; font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.6rem); line-height: 1.22; font-weight: 700">Quién es el responsable y en qué proporción</h3>
+<p style="margin: 0; color: #2E3A50">Determina a quién se reclama y si hay concurrencia de culpas.</p>
+<button type="button" class="ps-link" data-pick="2" aria-pressed="false" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0; border: 0; background: transparent; font: inherit; font-size: 16px; font-weight: 600; color: #16261D; text-decoration: underline; text-underline-offset: 4px; cursor: pointer">Ver en el documento<svg class="ps-arrow" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></button>
+</li>
+
+<li class="ps-step" data-crit="3" style="display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 28px; border-radius: 14px; border-width: 1.5px; border-style: solid; transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease; border-color: rgba(22, 38, 29, 0.14); background-color: transparent; box-shadow: none">
+<p style="margin: 0; display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #4B5568"><span aria-hidden="true" data-dot="3" style="width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid #16261D; background: #C2CAD6"></span>En las nóminas y los partes de baja</p>
+<h3 style="margin: 0; font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.6rem); line-height: 1.22; font-weight: 700">Qué dejó de percibir por la lesión</h3>
+<p style="margin: 0; color: #2E3A50">El perjuicio económico se acredita con datos, no con aproximaciones.</p>
+<button type="button" class="ps-link" data-pick="3" aria-pressed="false" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0; border: 0; background: transparent; font: inherit; font-size: 16px; font-weight: 600; color: #16261D; text-decoration: underline; text-underline-offset: 4px; cursor: pointer">Ver en el documento<svg class="ps-arrow" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></button>
+</li>
+
+<li class="ps-step" data-crit="4" style="display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 28px; border-radius: 14px; border-width: 1.5px; border-style: solid; transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease; border-color: rgba(22, 38, 29, 0.14); background-color: transparent; box-shadow: none">
+<p style="margin: 0; display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #4B5568"><span aria-hidden="true" data-dot="4" style="width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid #16261D; background: #C2CAD6"></span>En el baremo</p>
+<h3 style="margin: 0; font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.6rem); line-height: 1.22; font-weight: 700">Qué partida falta en la oferta</h3>
+<p style="margin: 0; color: #2E3A50">Secuelas, perjuicio económico y perjuicios familiares suelen quedar fuera de la primera oferta.</p>
+<button type="button" class="ps-link" data-pick="4" aria-pressed="false" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0; border: 0; background: transparent; font: inherit; font-size: 16px; font-weight: 600; color: #16261D; text-decoration: underline; text-underline-offset: 4px; cursor: pointer">Ver en el documento<svg class="ps-arrow" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></button>
+</li>
+
+</ol>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; margin-top: 56px; padding-top: 32px; border-top: 1px solid #C2CAD6">
+<p style="margin: 0; max-width: 34em; font-size: 20px; line-height: 1.45; font-weight: 600">Si la oferta de la aseguradora es correcta, se lo diremos y no cobraremos honorarios por decirle que firme. Preferimos no iniciar una reclamación que no está bien fundada.</p>
+<a class="ps-btn" href="#estudio" style="display: inline-flex; align-items: center; height: 56px; padding: 0 26px; border-radius: 10px; background: #32734A; color: #FFFFFF; font-size: 17px; font-weight: 700; text-decoration: none; white-space: nowrap; box-shadow: inset 0 -2px 0 rgba(22, 38, 29, 0.18)">Solicitar estudio gratuito</a>
+</div>
+</div>
 </section>
 
-<section id="faq" class="bloque">
-  <div class="caja" style="display:flex;flex-direction:column;gap:22px">
-    <div>
-      <p class="sobre" style="margin:0 0 8px">Preguntas frecuentes</p>
-      <h2>Las dudas más habituales</h2>
-    </div>
-    <div class="faq">
-      <details>
-        <summary>El accidente fue hace meses, ¿llego a tiempo?</summary>
-        <p>La acción para reclamar indemnización por un accidente de tráfico tiene, como regla general, un plazo de prescripción de un año desde el siniestro o desde que se conocieron las consecuencias, interrumpido por las reclamaciones extrajudiciales. Con el estudio inicial comprobamos su situación concreta: a veces hay tiempo, y a veces no. Preferimos decírselo antes que alimentar una expectativa imposible.</p>
-      </details>
-      <details>
-        <summary>Yo también tenía parte de culpa, ¿puedo reclamar?</summary>
-        <p>Sí, en la parte que corresponda. Si hay concurrencia de culpas, la indemnización se reduce proporcionalmente. Revisamos el atestado y las circunstancias para saber qué cabe defender en su caso.</p>
-      </details>
-      <details>
-        <summary>La aseguradora ya me ha ofrecido una cantidad, ¿sirve?</summary>
-        <p>Puede servir, o no. La comparamos con lo que corresponde según el baremo y su documentación médica. Si es correcta, se lo diremos; firmar una oferta justa también es un buen resultado. Si se queda corta, negociamos la diferencia.</p>
-      </details>
-      <details>
-        <summary>Me dieron el alta y sigo con molestias, ¿qué hago?</summary>
-        <p>No firme conformidad y consúltenos. Si tras el alta persisten síntomas, puede ser necesaria una valoración de secuela, y esa partida suele ser la más importante del expediente. Firmar antes de la estabilización puede cerrar la reclamación.</p>
-      </details>
-      <details>
-        <summary>Era peatón / ciclista / pasajero, ¿me aplican los mismos límites?</summary>
-        <p>Las víctimas que no son conductor del vehículo tienen un régimen más favorable en el baremo, con indemnizaciones mínimas incluso si fueron parcialmente responsables. Es una de las diferencias que más dinero deja sobre la mesa cuando el expediente se liquida como si la víctima fuera el conductor.</p>
-      </details>
-      <details>
-        <summary>¿Qué pasa si el responsable no tiene seguro o huyó?</summary>
-        <p>La reclamación se dirige al Consorcio de Compensación de Seguros, que atiende los siniestros causados por vehículos sin seguro o sin identificar. Tiene plazos y trámites propios; le indicamos cómo actuar en el estudio inicial.</p>
-      </details>
-    </div>
-  </div>
+<section id="como-trabajamos" class="ps-dark" style="background: #16261D; color: #FFFFFF; padding-top: clamp(72px, 8vw, 112px); padding-bottom: clamp(72px, 8vw, 112px)">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box">
+<h2 style="margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700; color: #FFFFFF">Cómo trabajamos</h2>
+<ol style="list-style: none; margin: 48px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 48px 40px">
+<li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.22)">
+<span style="align-self: flex-start; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: #32734A; color: #FFFFFF; font-size: 17px; font-weight: 800">1</span>
+<h3 style="margin: 0; font-size: 22px; line-height: 1.25; color: #FFFFFF">Estudio inicial gratuito</h3>
+<p style="margin: 0; font-size: 17px; color: #C5CDDA">Recogemos lo que tiene (parte, atestado, informes) y le decimos qué se puede reclamar y con qué plazos. Si le falta documentación, le indicamos cómo pedirla.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.22)">
+<span style="align-self: flex-start; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: #32734A; color: #FFFFFF; font-size: 17px; font-weight: 800">2</span>
+<h3 style="margin: 0; font-size: 22px; line-height: 1.25; color: #FFFFFF">Comunicación a la aseguradora</h3>
+<p style="margin: 0; font-size: 17px; color: #C5CDDA">Abrimos la reclamación frente a la compañía responsable y nos identificamos como su representación, para que la negociación no se haga directamente con usted.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.22)">
+<span style="align-self: flex-start; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: #32734A; color: #FFFFFF; font-size: 17px; font-weight: 800">3</span>
+<h3 style="margin: 0; font-size: 22px; line-height: 1.25; color: #FFFFFF">Seguimiento de su lesión</h3>
+<p style="margin: 0; font-size: 17px; color: #C5CDDA">No se puede valorar bien una lesión que aún no se ha estabilizado. Seguimos su evolución médica hasta el alta, que es cuando la indemnización puede calcularse de verdad.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.22)">
+<span style="align-self: flex-start; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: #32734A; color: #FFFFFF; font-size: 17px; font-weight: 800">4</span>
+<h3 style="margin: 0; font-size: 22px; line-height: 1.25; color: #FFFFFF">Cálculo conforme al baremo</h3>
+<p style="margin: 0; font-size: 17px; color: #C5CDDA">Con el informe de alta valoramos cada partida: días, secuelas, perjuicios económicos y personales. Le explicamos el cálculo, no solo la cifra.</p>
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; color: #32734A"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg>Usted decide si acepta la oferta</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.22)">
+<span style="align-self: flex-start; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: #32734A; color: #FFFFFF; font-size: 17px; font-weight: 800">5</span>
+<h3 style="margin: 0; font-size: 22px; line-height: 1.25; color: #FFFFFF">Oferta o demanda</h3>
+<p style="margin: 0; font-size: 17px; color: #C5CDDA">Si la aseguradora ofrece lo que corresponde, se lo diremos. Si se queda corta, negociamos la diferencia o presentamos demanda con la prueba que el procedimiento exige.</p>
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; color: #32734A"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg>Usted decide siempre</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.22)">
+<span style="align-self: flex-start; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: #32734A; color: #FFFFFF; font-size: 17px; font-weight: 800">6</span>
+<h3 style="margin: 0; font-size: 22px; line-height: 1.25; color: #FFFFFF">Ejecución y cierre</h3>
+<p style="margin: 0; font-size: 17px; color: #C5CDDA">Seguimos el expediente hasta el abono efectivo de la indemnización.</p>
+</li>
+</ol>
+</div>
 </section>
 
-<section id="contacto" class="bloque franja">
-  <div class="caja" style="display:flex;flex-direction:column;gap:26px">
-    <div>
-      <p class="sobre" style="margin:0 0 8px">Contacto</p>
-      <h2>Cuéntenos su accidente</h2>
-      <p style="max-width:44em;color:var(--suave)">Déjenos sus datos y un resumen del accidente. Un abogado del despacho revisará la información y se pondrá en contacto con usted. Si prefiere hablar ahora, llame al <a href="tel:+34915425307">915 425 307</a> o al <a href="tel:+34637597988">637 597 988</a>, escríbanos por <a href="https://wa.me/34637597988" target="_blank" rel="noopener">WhatsApp</a> o envíe un correo a <a href="mailto:pachecosotoabogados@gmail.com">pachecosotoabogados@gmail.com</a>.</p>
-    </div>
-    <div class="formulario">
-      <div data-form-step="1">
-        <div data-form="contacto" style="display:flex;flex-direction:column;gap:16px" onsubmit="return false">
-          <input type="text" name="bot-field" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
-          <div class="dos-col">
-            <div class="campo"><label for="f-nombre">Nombre y apellidos</label><input id="f-nombre" name="nombre" type="text" required autocomplete="name"></div>
-            <div class="campo"><label for="f-fecha">Fecha aproximada del accidente</label><input id="f-fecha" name="fecha_accidente" type="date" required></div>
-          </div>
-          <div class="dos-col">
-            <div class="campo"><label for="f-telefono">Teléfono móvil</label><input id="f-telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required></div>
-            <div class="campo"><label for="f-telefono2">Repita el teléfono móvil</label><input id="f-telefono2" name="telefono_confirmar" type="tel" inputmode="tel" required></div>
-          </div>
-          <div class="dos-col">
-            <div class="campo"><label for="f-correo">Correo electrónico</label><input id="f-correo" name="correo" type="email" autocomplete="email" required></div>
-            <div class="campo"><label for="f-correo2">Repita el correo electrónico</label><input id="f-correo2" name="correo_confirmar" type="email" required></div>
-          </div>
-          <div class="campo"><span class="label" style="font-size:15px;font-weight:600;color:var(--carbon)">Usted era</span>
-            <div class="opciones">
-              <label><input type="radio" name="rol" value="conductor" required>Conductor</label>
-              <label><input type="radio" name="rol" value="pasajero">Pasajero</label>
-              <label><input type="radio" name="rol" value="peaton">Peatón</label>
-              <label><input type="radio" name="rol" value="ciclista">Ciclista</label>
-            </div>
-          </div>
-          <div class="campo"><span class="label" style="font-size:15px;font-weight:600;color:var(--carbon)">¿La aseguradora le ha hecho ya una oferta?</span>
-            <div class="opciones">
-              <label><input type="radio" name="oferta" value="si" required>Sí</label>
-              <label><input type="radio" name="oferta" value="no">No</label>
-              <label><input type="radio" name="oferta" value="no-se">No lo sé</label>
-            </div>
-          </div>
-          <div class="campo"><label for="f-mensaje">Cuéntenos brevemente qué ocurrió</label><input id="f-mensaje" name="mensaje" type="text" placeholder="Por ejemplo: alcance en la M-40, baja de tres semanas, aún con molestias cervicales" style="height:auto;padding:12px 14px"></div>
-          <label style="display:flex;gap:10px;align-items:flex-start;font-size:15px"><input type="checkbox" name="privacidad" value="sí" required style="accent-color:var(--verde);margin-top:5px">He leído y acepto la <a href="politica-de-privacidad.html">Política de privacidad</a>.</label>
-          <button type="button" class="boton" data-action="enviar-datos" style="align-self:flex-start">Enviar mis datos</button>
-          <p class="error" data-error="contacto" hidden role="alert">No se han podido enviar sus datos. Inténtelo de nuevo o llámenos al 915 425 307.</p>
-          <p style="margin:0;font-size:13px;color:var(--suave)">Puede retirar su consentimiento en cualquier momento escribiendo a <a href="mailto:pachecosotoabogados@gmail.com">pachecosotoabogados@gmail.com</a>.</p>
-        </div>
-      </div>
-      <div data-form-step="2" hidden>
-        <div data-form="documentos" style="display:flex;flex-direction:column;gap:18px">
-          <div class="aviso-ok">
-            <span class="check" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"><path d="M20 6 9 17l-5-5"></path></svg></span>
-            <div><h3 role="status" style="margin:0;font-size:21px">Sus datos se han enviado</h3><p style="margin:0">Nos pondremos en contacto con usted a la mayor brevedad. Su referencia es <strong data-ref="1"></strong>.</p></div>
-          </div>
-          <h3>¿Quiere adelantar el estudio?</h3>
-          <p style="margin:0;color:var(--suave)">Envíenos ahora cualquier documento del accidente. No hace falta que los tenga todos: con uno ya podemos empezar. Si lo prefiere, puede enviárnoslos más adelante o por correo a <a href="mailto:pachecosotoabogados@gmail.com">pachecosotoabogados@gmail.com</a> con su referencia en el asunto.</p>
-          <div class="suelto"><label for="d-doc" style="font-size:15px;font-weight:600">Documentos (parte amistoso o atestado, informes médicos, partes de baja, oferta de la aseguradora, fotografías...)</label><input id="d-doc" name="documentos" type="file" multiple accept=".pdf,.jpg,.jpeg,.png"></div>
-          <p style="margin:0;font-size:14px;color:var(--suave)">Formatos PDF, JPG o PNG. Las fotos se comprimen en su navegador antes de enviarlas; los archivos de más de 8 MB es mejor enviarlos por correo.</p>
-          <button type="button" class="boton" data-action="enviar-docs" style="align-self:flex-start">Enviar documentos</button>
-          <p class="error" data-error="documentos" hidden role="alert">No se han podido enviar los documentos. Inténtelo de nuevo o envíelos por correo con su referencia en el asunto.</p>
-          <p style="margin:0;font-size:15px;color:var(--suave)">Si ahora no los tiene a mano, no se preocupe: su solicitud ya está registrada.</p>
-        </div>
-      </div>
-      <div data-form-step="3" hidden>
-        <div style="display:flex;flex-direction:column;gap:16px">
-          <div class="aviso-ok">
-            <span class="check" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"><path d="M20 6 9 17l-5-5"></path></svg></span>
-            <div><h3 role="status" style="margin:0;font-size:21px">Documentos recibidos</h3><p style="margin:0">Gracias. Con ellos podremos preparar el estudio antes de llamarle. Su referencia es <strong data-ref="1"></strong>.</p></div>
-          </div>
-          <h3>Qué ocurre ahora</h3>
-          <ol style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;color:var(--suave)">
-            <li>Revisamos su solicitud y los documentos que nos ha enviado.</li>
-            <li>Le llamamos para resolver dudas y, si falta algo, le decimos cómo conseguirlo.</li>
-            <li>Le explicamos por escrito qué se puede reclamar y con qué plazos.</li>
-          </ol>
-          <p style="margin:0;padding:12px 14px;border-radius:8px;background:rgba(46,125,91,.1);font-size:15px">Mientras tanto, no firme conformidad con ninguna oferta de la aseguradora sin revisarla antes.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<section id="por-que" style="background: #FFFFFF; padding-top: clamp(72px, 8vw, 112px); padding-bottom: clamp(72px, 8vw, 112px)">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box">
+<h2 style="margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700">Por qué elegirnos</h2>
+<ul style="list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 28px 48px">
+<li style="padding-top: 16px; border-top: 2px solid #16261D"><p style="margin: 0 0 6px; font-size: 18px; font-weight: 700">Diagnóstico antes que promesas</p><p style="margin: 0; font-size: 17px; color: #2E3A50">Cada expediente se estudia de forma individual antes de reclamar, porque el valor de la indemnización depende de su lesión y de su documentación.</p></li>
+<li style="padding-top: 16px; border-top: 2px solid #16261D"><p style="margin: 0 0 6px; font-size: 18px; font-weight: 700">Litigación frente a aseguradoras</p><p style="margin: 0; font-size: 17px; color: #2E3A50">Conocemos las defensas habituales de las entidades y cómo las valoran los juzgados.</p></li>
+<li style="padding-top: 16px; border-top: 2px solid #16261D"><p style="margin: 0 0 6px; font-size: 18px; font-weight: 700">Estrategia personalizada</p><p style="margin: 0; font-size: 17px; color: #2E3A50">Valoramos si conviene reclamar también los daños del vehículo y los perjuicios de sus familiares en un único procedimiento, para no fragmentar la reclamación.</p></li>
+<li style="padding-top: 16px; border-top: 2px solid #16261D"><p style="margin: 0 0 6px; font-size: 18px; font-weight: 700">Transparencia en honorarios</p><p style="margin: 0; font-size: 17px; color: #2E3A50">Le explicamos desde el principio cómo trabajamos y qué coste tendrá para usted, sin letra pequeña.</p><a class="ps-link" href="#honorarios" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 4px; font-size: 16px; font-weight: 600; text-underline-offset: 4px">Ver honorarios<svg class="ps-arrow" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></li>
+<li style="padding-top: 16px; border-top: 2px solid #16261D"><p style="margin: 0 0 6px; font-size: 18px; font-weight: 700">Trato directo</p><p style="margin: 0; font-size: 17px; color: #2E3A50">Un abogado responsable de su expediente le informará de cada paso.</p></li>
+</ul>
+</div>
 </section>
+
+<section id="honorarios" style="background: #EEF1F5; padding-top: clamp(72px, 8vw, 112px); padding-bottom: clamp(72px, 8vw, 112px)">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(40px, 5vw, 80px)">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700">Honorarios</h2>
+<p style="margin: 0; font-size: clamp(1.25rem, 1rem + 0.8vw, 1.6rem); line-height: 1.3; font-weight: 600">El estudio inicial es gratuito y los honorarios se pactan por escrito antes de empezar.</p>
+<dl style="margin: 0; border-top: 1px solid #C2CAD6">
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid #C2CAD6"><dt style="flex: 0 0 200px; font-weight: 700">Estudio de viabilidad</dt><dd style="flex: 1 1 260px; margin: 0; color: #2E3A50">Gratuito y sin compromiso.</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid #C2CAD6"><dt style="flex: 0 0 200px; font-weight: 700">Si reclamamos</dt><dd style="flex: 1 1 260px; margin: 0; color: #2E3A50">Honorarios pactados por escrito en la hoja de encargo antes de empezar, sin letra pequeña.</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid #C2CAD6"><dt style="flex: 0 0 200px; font-weight: 700">Provisión de fondos</dt><dd style="flex: 1 1 260px; margin: 0; color: #2E3A50">Solo si el caso va a juicio, y se lo indicamos desde el principio.</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid #C2CAD6"><dt style="flex: 0 0 200px; font-weight: 700">Si su caso no compensa</dt><dd style="flex: 1 1 260px; margin: 0; color: #2E3A50">Se lo diremos y no lo empezaremos. No cobramos honorarios por decirle que firme una oferta justa.</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid #C2CAD6"><dt style="flex: 0 0 200px; font-weight: 700">Costas</dt><dd style="flex: 1 1 260px; margin: 0; color: #2E3A50">Si el juzgado condena a la aseguradora a pagar las costas, la parte que corresponde al abogado es para el despacho. Antes de demandar le explicamos los riesgos y su importe máximo estimado.</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid #C2CAD6"><dt style="flex: 0 0 200px; font-weight: 700">Antes de empezar</dt><dd style="flex: 1 1 260px; margin: 0; color: #2E3A50">Firmará una hoja de encargo con todas las condiciones por escrito, incluido qué ocurre con las costas y con los gastos de procurador.</dd></div>
+</dl>
+</div>
+<div role="group" aria-label="Ejemplo de liquidación" style="flex: 1 1 360px; min-width: 0; max-width: 460px; background: #FFFFFF; border: 1px solid #D6DCE5; border-radius: 6px; box-shadow: 0 30px 60px -44px rgba(22, 38, 29, 0.55); padding: 28px 28px 24px; font-variant-numeric: tabular-nums">
+<p style="margin: 0 0 14px; font-size: 15px; font-weight: 700">Ejemplo de liquidación</p>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; font-size: 17px"><span>Le abonan</span><span>18.540,00&nbsp;€</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-top: 1px dashed #C2CAD6; font-size: 17px; color: #2E3A50"><span>Honorarios (pactados)</span><span>−2.400,00&nbsp;€</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-top: 1px dashed #C2CAD6; font-size: 17px; color: #2E3A50"><span>IVA de los honorarios (21&nbsp;%)</span><span>−504,00&nbsp;€</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; margin-top: 6px; padding: 14px 0 4px; border-top: 2px solid #16261D; font-size: 20px; font-weight: 800"><span>Usted recibe</span><span>15.636,00&nbsp;€</span></div>
+<p style="margin: 14px 0 0; font-size: 14px; color: #4B5568">Ejemplo ilustrativo con una indemnización de 18.540&nbsp;€ y honorarios pactados de 2.400&nbsp;€.</p>
+</div>
+</div>
+</section>
+
+<section id="preguntas" style="background: #FFFFFF; padding-top: clamp(72px, 8vw, 112px); padding-bottom: clamp(72px, 8vw, 112px)">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px 64px">
+<h2 style="flex: 1 1 300px; min-width: 0; margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700">Respuestas a las dudas más frecuentes</h2>
+<div class="ps-faq" style="flex: 2 1 560px; min-width: 0; border-top: 1px solid #D6DCE5">
+<details style="border-bottom: 1px solid #D6DCE5">
+<summary style="display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 22px 0; font-size: 19px; line-height: 1.35; font-weight: 600"><span>«El accidente fue hace meses, ¿llego a tiempo?»</span><svg class="ps-plus" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 2; stroke-linecap: round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<div style="padding: 0 48px 24px 0; font-size: 17px; color: #2E3A50"><p style="margin: 0">Como regla general, la acción para reclamar la indemnización por un accidente de tráfico prescribe al año desde el siniestro o desde que se conocieron sus consecuencias, y las reclamaciones extrajudiciales interrumpen el plazo. En el estudio inicial comprobamos su situación concreta: a veces hay tiempo y a veces no. Preferimos decírselo antes que alimentar una expectativa imposible.</p></div>
+</details>
+<details style="border-bottom: 1px solid #D6DCE5">
+<summary style="display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 22px 0; font-size: 19px; line-height: 1.35; font-weight: 600"><span>«Yo también tenía parte de culpa, ¿puedo reclamar?»</span><svg class="ps-plus" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 2; stroke-linecap: round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<div style="padding: 0 48px 24px 0; font-size: 17px; color: #2E3A50"><p style="margin: 0">Sí, en la parte que corresponda. Si hay concurrencia de culpas, la indemnización se reduce proporcionalmente. Revisamos el atestado y las circunstancias para saber qué cabe defender en su caso.</p></div>
+</details>
+<details style="border-bottom: 1px solid #D6DCE5">
+<summary style="display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 22px 0; font-size: 19px; line-height: 1.35; font-weight: 600"><span>«La aseguradora ya me ha ofrecido una cantidad, ¿sirve?»</span><svg class="ps-plus" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 2; stroke-linecap: round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<div style="padding: 0 48px 24px 0; font-size: 17px; color: #2E3A50"><p style="margin: 0">Puede servir, o no. La comparamos con lo que corresponde según el baremo y su documentación médica. Si es correcta, se lo diremos: firmar una oferta justa también es un buen resultado. Si se queda corta, negociamos la diferencia.</p></div>
+</details>
+<details style="border-bottom: 1px solid #D6DCE5">
+<summary style="display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 22px 0; font-size: 19px; line-height: 1.35; font-weight: 600"><span>«Me dieron el alta y sigo con molestias, ¿qué hago?»</span><svg class="ps-plus" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 2; stroke-linecap: round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<div style="padding: 0 48px 24px 0; font-size: 17px; color: #2E3A50"><p style="margin: 0">No firme conformidad y consúltenos. Si tras el alta persisten síntomas, puede ser necesaria una valoración de secuela, y esa partida suele ser la más importante del expediente. Firmar antes de la estabilización puede cerrar la reclamación.</p></div>
+</details>
+<details style="border-bottom: 1px solid #D6DCE5">
+<summary style="display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 22px 0; font-size: 19px; line-height: 1.35; font-weight: 600"><span>«Era peatón, ciclista o pasajero, ¿me aplican los mismos límites?»</span><svg class="ps-plus" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 2; stroke-linecap: round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<div style="padding: 0 48px 24px 0; font-size: 17px; color: #2E3A50"><p style="margin: 0">Las víctimas que no conducían el vehículo tienen un régimen más favorable en el baremo, con indemnizaciones mínimas incluso si fueron parcialmente responsables. Es una de las diferencias que más dinero deja sobre la mesa cuando el expediente se liquida como si la víctima fuera el conductor.</p></div>
+</details>
+<details style="border-bottom: 1px solid #D6DCE5">
+<summary style="display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 22px 0; font-size: 19px; line-height: 1.35; font-weight: 600"><span>«¿Qué pasa si el responsable no tiene seguro o huyó?»</span><svg class="ps-plus" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="margin-top: 2px; fill: none; stroke: #16261D; stroke-width: 2; stroke-linecap: round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<div style="padding: 0 48px 24px 0; font-size: 17px; color: #2E3A50"><p style="margin: 0">La reclamación se dirige al Consorcio de Compensación de Seguros, que atiende los siniestros causados por vehículos sin seguro o sin identificar. Tiene plazos y trámites propios; le indicamos cómo actuar en el estudio inicial.</p></div>
+</details>
+
+</div>
+</div>
+</section>
+
+<section id="estudio" class="ps-dark" style="background: #16261D; color: #FFFFFF; padding-top: clamp(72px, 8vw, 112px); padding-bottom: clamp(72px, 8vw, 112px)">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box; display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(40px, 5vw, 72px)">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-size: clamp(2rem, 1.35rem + 1.9vw, 3.125rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700; color: #FFFFFF">Solicite su estudio gratuito</h2>
+<p style="margin: 0; color: #D3D9E3">Déjenos sus datos y un resumen del accidente, y le diremos sin coste ni compromiso qué se puede reclamar y con qué plazos.</p>
+<div data-ya-enviado hidden>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<h3 style="margin: 8px 0 0; font-size: 20px; color: #FFFFFF">Para empezar bastan sus datos. Si quiere acelerar el estudio, tenga a mano:</h3>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px">
+<li style="display: flex; align-items: flex-start; gap: 16px; font-size: 17px; color: #D3D9E3">
+<span aria-hidden="true" style="flex: 0 0 34px; height: 42px; border-radius: 3px; background: #FFFFFF; padding: 8px 6px; display: flex; flex-direction: column; gap: 4px"><span style="display: block; height: 3px; width: 100%; border-radius: 2px; background: #C2CAD6"></span><span style="display: block; height: 3px; width: 80%; border-radius: 2px; background: #C2CAD6"></span><span style="display: block; height: 5px; width: 100%; border-radius: 2px; background: #32734A"></span><span style="display: block; height: 3px; width: 70%; border-radius: 2px; background: #C2CAD6"></span></span>
+<span><strong style="color: #FFFFFF">Parte amistoso, denuncia o atestado</strong> de la policía, o la referencia del accidente.</span>
+</li>
+<li style="display: flex; align-items: flex-start; gap: 16px; font-size: 17px; color: #D3D9E3">
+<span aria-hidden="true" style="flex: 0 0 34px; height: 42px; border-radius: 3px; background: #FFFFFF; padding: 8px 6px; display: flex; flex-direction: column; gap: 4px"><span style="display: block; height: 3px; width: 100%; border-radius: 2px; background: #C2CAD6"></span><span style="display: block; height: 5px; width: 90%; border-radius: 2px; background: #32734A"></span><span style="display: block; height: 3px; width: 100%; border-radius: 2px; background: #C2CAD6"></span><span style="display: block; height: 3px; width: 60%; border-radius: 2px; background: #C2CAD6"></span></span>
+<span><strong style="color: #FFFFFF">Informes médicos y partes de baja</strong>, desde la urgencia hasta el alta.</span>
+</li>
+<li style="display: flex; align-items: flex-start; gap: 16px; font-size: 17px; color: #D3D9E3">
+<span aria-hidden="true" style="flex: 0 0 34px; height: 42px; border-radius: 3px; background: #FFFFFF; padding: 8px 6px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px"><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #32734A"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span><span style="display: block; height: 3px; border-radius: 1px; background: #C2CAD6"></span></span>
+<span><strong style="color: #FFFFFF">Oferta o carta de la aseguradora</strong>, si ya le han liquidado.</span>
+</li>
+<li style="display: flex; align-items: flex-start; gap: 16px; font-size: 17px; color: #D3D9E3">
+<span aria-hidden="true" style="flex: 0 0 34px; height: 42px; border-radius: 3px; background: #FFFFFF; padding: 8px 6px; display: flex; flex-direction: column; gap: 4px"><span style="display: block; height: 3px; width: 60%; border-radius: 2px; background: #C2CAD6"></span><span style="display: block; height: 3px; width: 100%; border-radius: 2px; background: #C2CAD6"></span><span style="display: block; height: 3px; width: 100%; border-radius: 2px; background: #C2CAD6"></span><span style="display: block; height: 3px; width: 40%; border-radius: 2px; background: #C2CAD6"></span></span>
+<span><strong style="color: #FFFFFF">Nóminas y justificantes de gastos</strong>: tratamientos, desplazamientos, reparaciones.</span>
+</li>
+</ul>
+<p style="margin: 0; color: #D3D9E3">Si le falta algún documento, no se preocupe: le indicaremos cómo conseguirlo.</p>
+</div>
+</div>
+<p style="margin: 0; color: #D3D9E3">¿Prefiere hablar? <a href="tel:+34915425307" style="color: #FFFFFF; font-weight: 700; text-underline-offset: 4px">915 425 307</a></p>
+</div>
+
+<div style="flex: 1 1 480px; min-width: 0; background: #FFFFFF; color: #16261D; border-radius: 12px; box-shadow: 0 40px 80px -48px rgba(0, 0, 0, 0.6); padding: clamp(24px, 3vw, 40px)">
+
+<div data-form-step="1">
+<div data-form="contacto" style="display: flex; flex-direction: column; gap: 18px">
+<h3 style="margin: 0; font-size: 24px; line-height: 1.2">Déjenos sus datos y le contactamos</h3>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-nombre" style="font-size: 15px; font-weight: 600">Nombre y apellidos</label>
+<input id="f-nombre" name="nombre" type="text" autocomplete="name" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #16261D">
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-telefono" style="font-size: 15px; font-weight: 600">Teléfono móvil</label>
+<input id="f-telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #16261D">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-telefono2" style="font-size: 15px; font-weight: 600">Repita el teléfono móvil</label>
+<input id="f-telefono2" name="telefono_confirmar" type="tel" inputmode="tel" autocomplete="off" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #16261D">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-correo" style="font-size: 15px; font-weight: 600">Correo electrónico</label>
+<input id="f-correo" name="correo" type="email" autocomplete="email" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #16261D">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-correo2" style="font-size: 15px; font-weight: 600">Repita el correo electrónico</label>
+<input id="f-correo2" name="correo_confirmar" type="email" autocomplete="off" required="required" style="height: 48px; padding: 0 14px; border: 1.5px solid #7A879B; border-radius: 8px; background: #FFFFFF; font: inherit; font-size: 17px; color: #16261D">
+</div>
+</div>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 2px"><legend style="padding: 0; margin-bottom: 4px; font-size: 15px; font-weight: 600; line-height: 1.4">¿Le ha hecho ya la aseguradora una oferta de indemnización?</legend><div style="display: flex; flex-wrap: wrap; gap: 0 26px"><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="prima_unica" value="si" style="width: 20px; height: 20px; margin: 0; accent-color: #16261D">Sí</label><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="prima_unica" value="no" style="width: 20px; height: 20px; margin: 0; accent-color: #16261D">No</label><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="prima_unica" value="no_lo_se" style="width: 20px; height: 20px; margin: 0; accent-color: #16261D">No lo sé</label></div></fieldset>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 2px"><legend style="padding: 0; margin-bottom: 4px; font-size: 15px; font-weight: 600; line-height: 1.4">¿Hubo más personas lesionadas en el accidente, además de usted?</legend><div style="display: flex; flex-wrap: wrap; gap: 0 26px"><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="cotitulares" value="si" style="width: 20px; height: 20px; margin: 0; accent-color: #16261D">Sí</label><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="cotitulares" value="no" style="width: 20px; height: 20px; margin: 0; accent-color: #16261D">No</label></div></fieldset>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 2px"><legend style="padding: 0; margin-bottom: 4px; font-size: 15px; font-weight: 600; line-height: 1.4">¿Ha comunicado ya el siniestro a la aseguradora?</legend><div style="display: flex; flex-wrap: wrap; gap: 0 26px"><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="reclamado" value="si" style="width: 20px; height: 20px; margin: 0; accent-color: #16261D">Sí</label><label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px"><input type="radio" name="reclamado" value="no" style="width: 20px; height: 20px; margin: 0; accent-color: #16261D">No</label></div></fieldset>
+<label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.45"><input type="checkbox" name="privacidad" value="acepto" required="required" style="flex: 0 0 auto; width: 20px; height: 20px; margin: 1px 0 0; accent-color: #16261D"><span>He leído y acepto la <a href="politica-de-privacidad.html" target="_blank" rel="noopener" style="color: #16261D">Política de privacidad</a>.</span></label>
+<button type="button" class="ps-btn" data-action="enviar-datos" style="height: 56px; border: 0; border-radius: 10px; background: #32734A; color: #FFFFFF; font: inherit; font-size: 17px; font-weight: 700; cursor: pointer; box-shadow: inset 0 -2px 0 rgba(22, 38, 29, 0.18)">Enviar mis datos</button>
+<p data-error="contacto" hidden="hidden" role="alert" style="margin: 0; padding: 10px 12px; border-radius: 8px; background: #FDECEC; color: #8A1C1C; font-size: 15px">No se han podido enviar sus datos. Inténtelo de nuevo o llámenos al 915 425 307.</p>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #4B5568">Puede retirar su consentimiento en cualquier momento escribiendo a <a href="mailto:pachecosotoabogados@gmail.com" style="color: #16261D">pachecosotoabogados@gmail.com</a>.</p>
+</div>
+</div>
+
+<div data-form-step="2" hidden>
+<div data-form="documentos" style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: flex-start; gap: 14px; padding: 16px 18px; border-radius: 10px; background: rgba(50, 115, 74, 0.2)">
+<span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #32734A; display: inline-flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: #16261D; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round"><path d="M20 6 9 17l-5-5"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 role="status" style="margin: 0; font-size: 22px; line-height: 1.2">Sus datos se han enviado</h3><p style="margin: 0; font-size: 16px; color: #2E3A50">Nos pondremos en contacto con usted a la mayor brevedad. Su referencia es <strong data-ref="1"></strong>.</p></div>
+</div>
+<h3 style="margin: 6px 0 0; font-size: 24px; line-height: 1.2">¿Quiere acelerar el proceso?</h3>
+<p style="margin: 0; font-size: 16px; color: #2E3A50">Envíenos cualquiera de estos archivos. No hace falta que los tenga todos: con uno ya podemos empezar a estudiar su caso.</p>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-escritura" style="font-size: 15px; font-weight: 600">Parte amistoso, denuncia o atestado del accidente</label><input id="d-escritura" name="escritura" type="file" multiple="multiple" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-poliza" style="font-size: 15px; font-weight: 600">Informes médicos y partes de baja</label><input id="d-poliza" name="poliza" type="file" multiple="multiple" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-cuadro" style="font-size: 15px; font-weight: 600">Oferta o carta de la aseguradora</label><input id="d-cuadro" name="cuadro" type="file" multiple="multiple" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-respuesta" style="font-size: 15px; font-weight: 600">Nóminas y justificantes de gastos del accidente</label><input id="d-respuesta" name="respuesta" type="file" multiple="multiple" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 1.5px dashed #7A879B; border-radius: 8px"><label for="d-otros" style="font-size: 15px; font-weight: 600">Otros documentos (fotos del vehículo, permiso, seguro…)</label><input id="d-otros" name="otros" type="file" multiple="multiple" accept=".pdf,.jpg,.jpeg,.png,.heic" style="font: inherit; font-size: 15px"></div>
+<p style="margin: 0; font-size: 14px; color: #4B5568">Formatos PDF, JPG o PNG. Puede elegir varios archivos en cada apartado. Una foto clara con el móvil sirve: las fotos y los PDF muy pesados se comprimen solos antes de enviarlos.</p>
+<button type="button" class="ps-btn" data-action="enviar-docs" style="height: 56px; border: 0; border-radius: 10px; background: #32734A; color: #FFFFFF; font: inherit; font-size: 17px; font-weight: 700; cursor: pointer; box-shadow: inset 0 -2px 0 rgba(22, 38, 29, 0.18)">Enviar documentos</button>
+<p data-error="documentos" hidden="hidden" role="alert" style="margin: 0; padding: 10px 12px; border-radius: 8px; background: #FDECEC; color: #8A1C1C; font-size: 15px">No se han podido enviar los documentos. Inténtelo de nuevo o envíenoslos por correo.</p>
+<p style="margin: 0; font-size: 15px; color: #2E3A50">¿Prefiere enviárnoslos por correo? <a data-mailto-docs="pachecosotoabogados@gmail.com" href="mailto:pachecosotoabogados@gmail.com" style="color: #16261D; font-weight: 700">Escríbanos a pachecosotoabogados@gmail.com</a> con su referencia en el asunto y los documentos adjuntos.</p>
+<p style="margin: 0; font-size: 15px; color: #4B5568">Si ahora no los tiene a mano, no se preocupe: puede enviárnoslos más adelante.</p>
+</div>
+</div>
+
+<div data-form-step="3" hidden>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: flex-start; gap: 14px; padding: 16px 18px; border-radius: 10px; background: rgba(50, 115, 74, 0.2)">
+<span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #32734A; display: inline-flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: #16261D; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round"><path d="M20 6 9 17l-5-5"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 role="status" style="margin: 0; font-size: 22px; line-height: 1.2">Documentos recibidos</h3><p style="margin: 0; font-size: 16px; color: #2E3A50">Gracias. Con ellos podremos estudiar su caso antes de llamarle. Su referencia es <strong data-ref="1"></strong>.</p></div>
+</div>
+<h3 style="margin: 4px 0 0; font-size: 20px">Qué ocurre ahora</h3>
+<ol style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; color: #2E3A50">
+<li>Revisamos sus datos y los documentos que nos ha enviado.</li>
+<li>Le llamamos para resolver dudas y, si falta algo, le decimos cómo conseguirlo.</li>
+<li>Le explicamos por escrito qué se puede reclamar y con qué plazos.</li>
+</ol>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; background: #EEF1F5; font-size: 15px">Mientras tanto, no firme conformidad con ninguna oferta de la aseguradora sin revisarla antes.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
 </main>
+<section id="gracias" hidden style="background: #EEF1F5; min-height: 720px; padding-top: clamp(48px, 7vw, 96px); padding-bottom: clamp(48px, 7vw, 96px)">
+<div style="max-width: 760px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box">
+<div style="display: flex; flex-direction: column; gap: 22px; padding: clamp(28px, 5vw, 56px); background: #FFFFFF; border: 1px solid #D6DCE5; border-radius: 10px; box-shadow: 0 40px 80px -56px rgba(22, 38, 29, 0.55)">
+<span aria-hidden="true" style="align-self: flex-start; width: 56px; height: 56px; border-radius: 50%; background: #32734A; display: inline-flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" style="fill: none; stroke: #16261D; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round"><path d="M20 6 9 17l-5-5"></path></svg></span>
+<h1 style="margin: 0; font-size: clamp(2rem, 1.4rem + 2vw, 3rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 700">Solicitud de estudio recibida</h1>
+<p style="margin: 0; font-size: 19px; color: #2E3A50">Gracias. Un abogado del despacho revisará la información y se pondrá en contacto con usted para indicarle los siguientes pasos.</p>
+<h2 style="margin: 12px 0 0; font-size: 22px; line-height: 1.25">Qué ocurre ahora</h2>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px">
+<li style="display: flex; align-items: flex-start; gap: 16px"><span aria-hidden="true" style="flex: 0 0 32px; height: 32px; border-radius: 50%; border: 1.5px solid #16261D; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">1</span><span>Revisamos su solicitud y los documentos que haya enviado.</span></li>
+<li style="display: flex; align-items: flex-start; gap: 16px"><span aria-hidden="true" style="flex: 0 0 32px; height: 32px; border-radius: 50%; border: 1.5px solid #16261D; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">2</span><span>Le llamamos para resolver dudas y, si falta algún documento, le indicamos cómo conseguirlo.</span></li>
+<li style="display: flex; align-items: flex-start; gap: 16px"><span aria-hidden="true" style="flex: 0 0 32px; height: 32px; border-radius: 50%; border: 1.5px solid #16261D; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">3</span><span>Le explicamos por escrito qué se puede reclamar y con qué plazos.</span></li>
+</ol>
+<p style="margin: 8px 0 0; padding: 16px 18px; border-radius: 8px; background: rgba(50, 115, 74, 0.22); font-size: 17px">Si la aseguradora le ofrece una cantidad mientras tanto, consúltelo con nosotros antes de firmar su conformidad.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 8px">
+<a href="#inicio" data-back="1" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; border: 1.5px solid #16261D; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none">Volver a la página</a>
+<a href="tel:+34915425307" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 16px; font-weight: 600; text-underline-offset: 4px">Llamar al 915 425 307</a>
+</div>
+</div>
+</div>
+</section>
 
-<footer class="pie">
-  <div class="caja">
-    <div><strong style="font-family:'Playfair Display',Georgia,serif;color:#F8F5EF">Accidentia</strong> · Pacheco&amp;Soto Abogados<br>Alberto Aguilera 35, 2º dcha., 28015 Madrid · Tel. 915 425 307 · <a href="tel:+34637597988">637 597 988</a> · <a href="https://wa.me/34637597988" target="_blank" rel="noopener">WhatsApp</a></div>
-    <div style="display:flex;gap:20px;flex-wrap:wrap">
-      <a href="/">Pacheco&amp;Soto Abogados</a>
-      <a href="/reintegra/">Reintegra</a>
-      <a href="politica-de-privacidad.html">Privacidad</a>
-      <a href="mailto:pachecosotoabogados@gmail.com">pachecosotoabogados@gmail.com</a>
-    </div>
-  </div>
+
+<footer class="ps-dark" style="background: #102018; color: #C5CDDA; padding-top: 64px; padding-bottom: 48px; font-size: 15px; line-height: 1.6">
+<div style="max-width: 1200px; margin: 0 auto; padding-left: clamp(20px, 4vw, 40px); padding-right: clamp(20px, 4vw, 40px); box-sizing: content-box; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px 32px">
+<span style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; color: #FFFFFF"><span style="display: inline-flex; align-items: center; gap: 10px"><svg width="40" height="40" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="10" transform="rotate(-62 14 14)" style="fill: none; stroke: #FFFFFF; stroke-width: 3.4; stroke-dasharray: 50 12.83"></circle><circle cx="14" cy="14" r="10" transform="rotate(-62 14 14)" style="fill: none; stroke: #32734A; stroke-width: 3.4; stroke-dasharray: 10.6 52.23; stroke-dashoffset: -51.1"></circle><text x="14" y="18" style="font-family: 'Schibsted Grotesk', Arial, sans-serif; font-size: 11px; font-weight: 800; fill: #FFFFFF; text-anchor: middle">✚</text></svg><span style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em">Accidentia</span></span><span style="display: inline-flex; align-items: baseline; gap: 8px; padding-left: 16px; border-left: 1px solid rgba(255, 255, 255, 0.24)"><span style="font-size: 17px; font-weight: 500; color: #C5CDDA">por</span><span style="font-size: 26px; font-weight: 800; letter-spacing: -0.02em">Pacheco<span style="font-family: 'Libre Caslon Text', Georgia, serif; font-style: italic; font-weight: 400; padding: 0 1px">&amp;</span>Soto</span><span style="font-size: 17px; font-weight: 500; color: #C5CDDA">Abogados</span></span></span>
+<span>Calle Alberto Aguilera 35, 2º dcha., 28015 Madrid. Tel. <a href="tel:+34915425307" style="color: #FFFFFF">915 425 307</a>. Fax 915 475 178. <a href="mailto:pachecosotoabogados@gmail.com" style="color: #FFFFFF">pachecosotoabogados@gmail.com</a></span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 24px 40px; padding-top: 32px; border-top: 1px solid rgba(255, 255, 255, 0.14)">
+<div><p style="margin: 0 0 6px; font-weight: 600; color: #FFFFFF">Titular de la web</p><p style="margin: 0">Pacheco&amp;Soto Abogados.</p></div>
+<div><p style="margin: 0 0 6px; font-weight: 600; color: #FFFFFF">Colegio profesional</p><p style="margin: 0">Gonzalo Pacheco Velasco, colegiado n.º 53742, y Beatriz Soto Ortiz, colegiada n.º 46426, del Ilustre Colegio de la Abogacía de Madrid.</p></div>
+<div><p style="margin: 0 0 6px; font-weight: 600; color: #FFFFFF">Titulación y normas profesionales</p><p style="margin: 0">Licenciados en Derecho y Abogados colegiados en el Ilustre Colegio de la Abogacía de Madrid, con títulos expedidos en España. Su ejercicio profesional se rige por el Estatuto General de la Abogacía Española y por el Código Deontológico de la Abogacía Española, disponibles en <a href="https://www.abogacia.es" style="color: #FFFFFF">abogacia.es</a>.</p></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 28px">
+<a href="https://pachecosotoabogados.es/" style="color: #FFFFFF">Pacheco&amp;Soto Abogados</a>
+<a href="https://reintegra.pachecosotoabogados.es/" style="color: #FFFFFF">Reintegra</a>
+<a href="politica-de-privacidad.html" style="color: #FFFFFF">Política de privacidad</a>
+</div>
+<p style="margin: 0; max-width: 60em; font-size: 14px">La información de esta página es de carácter general y no constituye asesoramiento jurídico. La viabilidad de cada reclamación depende de las circunstancias y la documentación de cada caso.</p>
+<p style="margin: 0; font-size: 14px">© 2026 Pacheco&amp;Soto Abogados</p>
+</div>
 </footer>
 
+<div class="ps-mbar">
+<a href="tel:+34915425307" style="flex: 1 1 0; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 52px; border: 1.5px solid #16261D; border-radius: 10px; color: #16261D; font-size: 16px; font-weight: 700; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Llamar</a>
+<a href="https://wa.me/34637597988" target="_blank" rel="noopener" style="flex: 1 1 0; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 52px; border: 1.5px solid #16261D; border-radius: 10px; color: #16261D; font-size: 16px; font-weight: 700; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="fill: currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A12 12 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>WhatsApp</a>
+<a class="ps-btn" href="#estudio" style="flex: 2 1 0; display: inline-flex; align-items: center; justify-content: center; height: 52px; border-radius: 10px; background: #32734A; color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none">Solicitar estudio gratuito</a>
+</div>
+
+</div>
+<form name="contacto" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="referencia"><input name="nombre"><input name="telefono"><input name="correo"><input name="prima_unica"><input name="cotitulares"><input name="reclamado"><input name="privacidad"><input name="utm_source"><input name="utm_medium"><input name="utm_campaign"><input name="referente"></form>
+<form name="documentos" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" hidden><input name="bot-field"><input name="referencia"><input name="correo"><input type="file" name="escritura"><input type="file" name="poliza"><input type="file" name="cuadro"><input type="file" name="respuesta"><input type="file" name="otros"></form>
 <script>
 (function () {
-  'use strict';
-  var ref = 'AC-' + Date.now().toString(36).slice(-4).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
-  var permiso = '';
-  var LIMITE = 8 * 1024 * 1024;
-  function pasos() { return document.querySelectorAll('[data-form-step]'); }
-  function mostrarPaso(n) { pasos().forEach(function (s, i) { s.hidden = (i !== n - 1); }); }
-  function error(nombre, texto) {
-    var e = document.querySelector('[data-error="' + nombre + '"]');
-    if (!e) return; if (texto) e.textContent = texto; e.hidden = false;
+  var ACC = '#32734A';
+  var ON = { borderColor: '#16261D', backgroundColor: '#FFFFFF', boxShadow: '0 18px 40px -28px rgba(22, 38, 29, 0.55)' };
+  var OFF = { borderColor: 'rgba(22, 38, 29, 0.14)', backgroundColor: 'transparent', boxShadow: 'none' };
+  var current = 0;
+  function setCrit(i) {
+    if (i === current) return;
+    current = i;
+    document.querySelectorAll('[data-doc]').forEach(function (d) { d.hidden = Number(d.getAttribute('data-doc')) !== i; });
+    document.querySelectorAll('[data-crit]').forEach(function (li) {
+      var on = Number(li.getAttribute('data-crit')) === i, s = on ? ON : OFF;
+      li.style.borderColor = s.borderColor; li.style.backgroundColor = s.backgroundColor; li.style.boxShadow = s.boxShadow;
+    });
+    document.querySelectorAll('[data-dot]').forEach(function (d) { d.style.background = Number(d.getAttribute('data-dot')) === i ? ACC : '#C2CAD6'; });
+    document.querySelectorAll('[data-pick]').forEach(function (b) { b.setAttribute('aria-pressed', Number(b.getAttribute('data-pick')) === i ? 'true' : 'false'); });
   }
-  // Captcha sin terceros ni cookies: la plataforma inyecta el reto firmado en PS_RETO
+  document.querySelectorAll('[data-pick]').forEach(function (b) {
+    b.addEventListener('click', function () { setCrit(Number(b.getAttribute('data-pick'))); });
+  });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) setCrit(Number(e.target.getAttribute('data-crit'))); });
+    }, { rootMargin: '-50% 0px -45% 0px', threshold: 0 });
+    document.querySelectorAll('[data-crit]').forEach(function (li) { io.observe(li); });
+  }
+  function showStep(n) {
+    document.querySelectorAll('[data-form-step]').forEach(function (s) { s.hidden = s.getAttribute('data-form-step') !== String(n); });
+    document.querySelectorAll('[data-ya-enviado]').forEach(function (s) { s.hidden = n < 2; });
+  }
+  document.querySelectorAll('[data-go]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var n = b.getAttribute('data-go');
+      if (n === '2') {
+        var fields = document.querySelectorAll('[data-form-step="1"] [required]');
+        for (var k = 0; k < fields.length; k++) { if (!fields[k].checkValidity()) { fields[k].reportValidity(); return; } }
+      }
+      showStep(n);
+      document.getElementById('estudio').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  var main = document.getElementById('contenido'), gracias = document.getElementById('gracias');
+  document.querySelectorAll('[data-submit]').forEach(function (a) {
+    a.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      main.hidden = true; gracias.hidden = false; window.scrollTo(0, 0);
+    });
+  });
+  document.querySelectorAll('[data-back]').forEach(function (a) {
+    a.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      gracias.hidden = true; main.hidden = false; showStep(1); window.scrollTo(0, 0);
+    });
+  });
+
+  var ex = document.querySelector('[data-ex]');
+  if (ex) {
+    var setEx = function (step, path) {
+      if (step) ex.setAttribute('data-step', String(step));
+      if (path) ex.setAttribute('data-path', path);
+      var st = ex.getAttribute('data-step'), pa = ex.getAttribute('data-path');
+      ex.querySelectorAll('[data-ex-go]').forEach(function (b) { var g = b.getAttribute('data-ex-go'); if (g !== 'next') b.setAttribute('aria-pressed', g === st ? 'true' : 'false'); });
+      ex.querySelectorAll('[data-ex-path]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-ex-path') === pa ? 'true' : 'false'); });
+    };
+    ex.querySelectorAll('[data-ex-go]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var g = b.getAttribute('data-ex-go');
+        setEx(g === 'next' ? Math.min(3, Number(ex.getAttribute('data-step')) + 1) : Number(g));
+      });
+    });
+    ex.querySelectorAll('[data-ex-path]').forEach(function (b) {
+      b.addEventListener('click', function () { setEx(3, b.getAttribute('data-ex-path')); });
+    });
+    if ('IntersectionObserver' in window) {
+      var exio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { ex.setAttribute('data-seen', '1'); exio.disconnect(); } });
+      }, { threshold: 0.25 });
+      exio.observe(ex);
+    } else { ex.setAttribute('data-seen', '1'); }
+  }
+
+  var ref = 'RT-' + Date.now().toString(36).slice(-4).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
+  var correo = '';
+  var permisoSubida = '';
+  var LIMITE = 8 * 1024 * 1024;
+  function mostrarError(nombre, texto) {
+    var e = document.querySelector('[data-error="' + nombre + '"]');
+    if (!e) return;
+    if (texto) e.textContent = texto;
+    e.hidden = false;
+  }
+  function ocultarError(nombre) {
+    var e = document.querySelector('[data-error="' + nombre + '"]');
+    if (e) e.hidden = true;
+  }
+  function irA(n) {
+    showStep(n);
+    document.querySelectorAll('[data-ref]').forEach(function (r) { r.textContent = ref; });
+    actualizarCorreoDocs();
+    document.getElementById('estudio').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  // Empezar a rellenar el formulario (una vez por visita, sin enviar lo que se escribe)
+  var cajaContacto = document.querySelector('[data-form="contacto"]');
+  if (cajaContacto) cajaContacto.addEventListener('focusin', function inicio() {
+    if (window.psEvento) psEvento('form_start', { formulario: 'contacto' });
+    cajaContacto.removeEventListener('focusin', inicio);
+  });
+  // Captcha sin terceros ni cookies: el navegador resuelve el reto firmado que trae la página (un segundo, sin hacer nada)
   function resolverReto() {
     var r = window.PS_RETO;
     if (!r || !window.crypto || !crypto.subtle || !window.TextEncoder) return Promise.resolve('');
@@ -397,17 +816,19 @@ input[type=file]{font:inherit;font-size:15px}
       return '';
     })();
   }
-  document.querySelectorAll('[name="telefono"], [name="telefono_confirmar"]').forEach(function (c) {
-    c.addEventListener('input', function () {
-      var limpio = c.value.replace(/[^\d+\s]/g, '').replace(/(?!^)\+/g, '');
-      if (limpio !== c.value) c.value = limpio;
+  var btnDatos = document.querySelector('[data-action="enviar-datos"]');
+  // En los campos del móvil solo entran números, espacios y un «+» al principio
+  document.querySelectorAll('[name="telefono"], [name="telefono_confirmar"]').forEach(function (campo) {
+    campo.addEventListener('input', function () {
+      var limpio = campo.value.replace(/[^\d+\s]/g, '').replace(/(?!^)\+/g, '');
+      if (limpio !== campo.value) campo.value = limpio;
     });
   });
-  var btnDatos = document.querySelector('[data-action="enviar-datos"]');
   if (btnDatos) btnDatos.addEventListener('click', function () {
     var caja = document.querySelector('[data-form="contacto"]');
     var req = caja.querySelectorAll('[required]');
     for (var k = 0; k < req.length; k++) { if (!req[k].checkValidity()) { req[k].reportValidity(); return; } }
+    // Móvil y correo: repetidos, para que no haya errores al escribirlos
     var tel = caja.querySelector('[name="telefono"]'), tel2 = caja.querySelector('[name="telefono_confirmar"]');
     var cor = caja.querySelector('[name="correo"]'), cor2 = caja.querySelector('[name="correo_confirmar"]');
     function aviso(campo, texto) {
@@ -419,86 +840,278 @@ input[type=file]{font:inherit;font-size:15px}
     if (tel2 && tel2.value.replace(/\s/g, '') !== movil) { aviso(tel2, 'Los teléfonos no coinciden.'); return; }
     if (cor.value.indexOf('@') < 1) { aviso(cor, 'Correo electrónico no válido.'); return; }
     if (cor2 && cor2.value.trim().toLowerCase() !== cor.value.trim().toLowerCase()) { aviso(cor2, 'Los correos no coinciden.'); return; }
-    document.querySelector('[data-error="contacto"]').hidden = true;
+    ocultarError('contacto');
     var datos = new URLSearchParams();
     datos.append('form-name', 'contacto');
-    datos.append('web', 'accidentia');
-    datos.append('linea', 'accidentia');
-    datos.append('asunto', 'accidente-trafico');
+    datos.append('bot-field', '');
     datos.append('referencia', ref);
-    caja.querySelectorAll('input, select').forEach(function (i) {
-      if (!i.name || i.type === 'file') return;
+    caja.querySelectorAll('input').forEach(function (i) {
+      if (!i.name) return;
       if ((i.type === 'radio' || i.type === 'checkbox') && !i.checked) return;
       datos.append(i.name, i.value);
     });
+    // Procedencia de la solicitud: etiquetas de campaña de la dirección y web de origen (solo el dominio). Sin cookies.
     var q = new URLSearchParams(location.search);
     ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (k) { if (q.get(k)) datos.append(k, q.get(k).slice(0, 100)); });
     try {
       var origen = document.referrer ? new URL(document.referrer).hostname : '';
       if (origen && origen !== location.hostname) datos.append('referente', origen);
     } catch (e) {}
+    correo = (caja.querySelector('[name="correo"]') || {}).value || '';
     btnDatos.disabled = true; btnDatos.textContent = 'Enviando…';
     resolverReto().then(function (altcha) { if (altcha) datos.append('altcha', altcha);
       return fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: datos.toString() }); })
       .then(function (r) {
+        // Si la plataforma rechaza el envío, se muestra su motivo (no un mensaje genérico)
         if (!r.ok) return r.json().catch(function () { return {}; }).then(function (d) { throw new Error(d.error || ''); });
-        return r.json().catch(function () { return {}; }).then(function (d) {
-          permiso = d.permiso || '';
-          document.querySelectorAll('[data-ref]').forEach(function (el) { el.textContent = ref; });
-          mostrarPaso(2);
-          document.getElementById('contacto').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
+        return r.json().catch(function () { return {}; });
       })
-      .catch(function (err) { error('contacto', err && err.message ? err.message + ' Si no se resuelve, llámenos al 915 425 307.' : 'No se han podido enviar sus datos. Inténtelo de nuevo o llámenos al 915 425 307.'); })
+      .then(function (d) {
+        if (d.referencia) ref = d.referencia;
+        permisoSubida = d.permiso || '';
+        if (window.psEvento) psEvento('generate_lead', { formulario: 'contacto' });
+        // La plataforma puede tener cerrada la subida de documentos: se salta ese paso
+        if (d.documentos === false) {
+          document.querySelectorAll('[data-ref]').forEach(function (r2) { r2.textContent = ref; });
+          main.hidden = true; gracias.hidden = false; window.scrollTo(0, 0); return;
+        }
+        irA(2);
+      })
+      .catch(function (err) { mostrarError('contacto', err && err.message ? err.message + ' Si no se resuelve, llámenos al 915 425 307.' : null); })
       .then(function () { btnDatos.disabled = false; btnDatos.textContent = 'Enviar mis datos'; });
   });
-  // Documentos: compresión de imágenes en el navegador y un archivo por envío (límite 8 MB)
+  // ---- Documentos: varios archivos por apartado, compresión en el navegador y un archivo por envío (límite de Netlify: 8 MB por envío)
+  var OBJETIVO = 7 * 1024 * 1024;
+  function cargar(src) {
+    return new Promise(function (ok, ko) { var s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = ko; document.head.appendChild(s); });
+  }
   function comprimirImagen(archivo) {
+    // Las fotos se reducen a 2.200 px y JPEG; si el navegador no puede abrirlas (p. ej. HEIC), se envían tal cual
     return new Promise(function (ok) {
-      if (!/^image\/(jpeg|png|webp)$/.test(archivo.type) || archivo.size < 1.5 * 1024 * 1024) { ok(archivo); return; }
+      if (!/^image\/(jpeg|png|webp)$/.test(archivo.type) || archivo.size < 1.5 * 1024 * 1024) { ok([archivo]); return; }
       var url = URL.createObjectURL(archivo), img = new Image();
       img.onload = function () {
         var escala = Math.min(1, 2200 / Math.max(img.width, img.height)), c = document.createElement('canvas');
         c.width = Math.round(img.width * escala); c.height = Math.round(img.height * escala);
         c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); URL.revokeObjectURL(url);
-        c.toBlob(function (b) { ok(b && b.size < archivo.size ? new File([b], archivo.name.replace(/\.\w+$/, '') + '.jpg', { type: 'image/jpeg' }) : archivo); }, 'image/jpeg', 0.82);
+        c.toBlob(function (b) { ok([b && b.size < archivo.size ? new File([b], archivo.name.replace(/\.\w+$/, '') + '.jpg', { type: 'image/jpeg' }) : archivo]); }, 'image/jpeg', 0.82);
       };
-      img.onerror = function () { URL.revokeObjectURL(url); ok(archivo); };
+      img.onerror = function () { URL.revokeObjectURL(url); ok([archivo]); };
       img.src = url;
     });
   }
+  async function comprimirPdf(archivo) {
+    // PDF de más de 8 MB: cada página se convierte en imagen comprimida; si aun así pesa demasiado, se divide en partes
+    await cargar('https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js');
+    await cargar('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js');
+    window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    var pdf = await window.pdfjsLib.getDocument({ data: await archivo.arrayBuffer() }).promise;
+    var partes = [], doc = null, tam = 0, base = archivo.name.replace(/\.pdf$/i, '');
+    for (var n = 1; n <= pdf.numPages; n++) {
+      var pagina = await pdf.getPage(n), v1 = pagina.getViewport({ scale: 1 }), v = pagina.getViewport({ scale: 1.6 });
+      var c = document.createElement('canvas'); c.width = v.width; c.height = v.height;
+      await pagina.render({ canvasContext: c.getContext('2d'), viewport: v }).promise;
+      var jpg = c.toDataURL('image/jpeg', 0.7), peso = jpg.length * 0.75, orient = v1.width > v1.height ? 'l' : 'p';
+      if (doc && tam + peso > OBJETIVO) { partes.push(doc.output('blob')); doc = null; tam = 0; }
+      if (!doc) { doc = new window.jspdf.jsPDF({ orientation: orient, unit: 'pt', format: [v1.width, v1.height] }); }
+      else { doc.addPage([v1.width, v1.height], orient); }
+      doc.addImage(jpg, 'JPEG', 0, 0, v1.width, v1.height); tam += peso;
+    }
+    if (doc) partes.push(doc.output('blob'));
+    return partes.map(function (b, k) {
+      return new File([b], partes.length > 1 ? base + ' (parte ' + (k + 1) + ' de ' + partes.length + ').pdf' : base + '.pdf', { type: 'application/pdf' });
+    });
+  }
+  function preparar(archivo) {
+    if (archivo.type === 'application/pdf' || /\.pdf$/i.test(archivo.name)) {
+      return archivo.size <= OBJETIVO ? Promise.resolve([archivo]) : comprimirPdf(archivo);
+    }
+    return comprimirImagen(archivo);
+  }
+  function actualizarCorreoDocs() {
+    document.querySelectorAll('[data-mailto-docs]').forEach(function (a) {
+      var destino = a.getAttribute('data-mailto-docs');
+      a.href = 'mailto:' + destino + '?subject=' + encodeURIComponent('Documentación ' + ref) +
+        '&body=' + encodeURIComponent('Adjunto los documentos para el estudio de mi caso (referencia ' + ref + ').');
+    });
+  }
+  actualizarCorreoDocs();
   var btnDocs = document.querySelector('[data-action="enviar-docs"]');
   if (btnDocs) btnDocs.addEventListener('click', async function () {
-    document.querySelector('[data-error="documentos"]').hidden = true;
-    var inputs = document.querySelectorAll('[data-form="documentos"] input[type="file"]');
+    ocultarError('documentos');
     var lista = [];
-    inputs.forEach(function (i) { Array.prototype.forEach.call(i.files || [], function (f) { lista.push({ campo: i.name, archivo: f }); }); });
-    if (!lista.length) { mostrarPaso(3); return; }
-    btnDocs.disabled = true; btnDocs.textContent = 'Enviando…';
+    document.querySelectorAll('[data-form="documentos"] input[type="file"]').forEach(function (i) {
+      Array.prototype.forEach.call(i.files || [], function (f) { lista.push({ campo: i.name, archivo: f }); });
+    });
+    if (!lista.length) { mostrarError('documentos', 'Seleccione al menos un archivo. Si ahora no los tiene, no se preocupe: puede enviárnoslos más adelante.'); return; }
+    btnDocs.disabled = true; btnDocs.textContent = 'Preparando documentos…';
     try {
+      var envios = [];
       for (var k = 0; k < lista.length; k++) {
-        var item = lista[k];
-        var archivo = await comprimirImagen(item.archivo);
-        if (archivo.size > LIMITE) throw new Error('El archivo «' + archivo.name + '» pesa más de 8 MB. Envíelo por correo con su referencia en el asunto.');
-        var fd = new FormData();
-        fd.append('form-name', 'documentos');
-        fd.append('web', 'accidentia');
-        fd.append('linea', 'accidentia');
-        fd.append('referencia', ref);
-        fd.append('permiso', permiso);
-        fd.append('campo', item.campo);
-        fd.append('archivo', archivo, archivo.name);
-        var r = await fetch('/', { method: 'POST', body: fd });
-        if (!r.ok) { var d = await r.json().catch(function () { return {}; }); throw new Error(d.error || ''); }
+        var preparados = await preparar(lista[k].archivo);
+        for (var m = 0; m < preparados.length; m++) {
+          if (preparados[m].size > LIMITE) throw new Error('grande:' + lista[k].archivo.name);
+          envios.push({ campo: lista[k].campo, archivo: preparados[m] });
+        }
       }
-      mostrarPaso(3);
-      document.getElementById('contacto').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      for (var e2 = 0; e2 < envios.length; e2++) {
+        btnDocs.textContent = 'Enviando ' + (e2 + 1) + ' de ' + envios.length + '…';
+        var fd = new FormData();
+        fd.append('form-name', 'documentos'); fd.append('bot-field', ''); fd.append('referencia', ref); fd.append('correo', correo); fd.append('permiso', permisoSubida);
+        fd.append(envios[e2].campo, envios[e2].archivo, envios[e2].archivo.name);
+        var r = await fetch('/', { method: 'POST', body: fd });
+        if (!r.ok) throw new Error('envio');
+      }
+      if (window.psEvento) psEvento('documentos_enviados', { archivos: envios.length });
+      irA(3);
     } catch (err) {
-      error('documentos', err && err.message ? err.message : 'No se han podido enviar los documentos. Inténtelo de nuevo o envíelos por correo con su referencia en el asunto.');
+      var msg = String(err && err.message || '');
+      mostrarError('documentos', msg.indexOf('grande:') === 0
+        ? 'El archivo «' + msg.slice(7) + '» sigue pesando más de 8 MB después de comprimirlo. Envíenoslo por correo con el enlace de abajo.'
+        : 'No se han podido enviar los documentos. Inténtelo de nuevo o envíenoslos por correo con el enlace de abajo.');
     }
     btnDocs.disabled = false; btnDocs.textContent = 'Enviar documentos';
   });
+  // Los enlaces de la cabecera devuelven a la página si se está en la vista de gracias
+  document.querySelectorAll('header a[href^="#"], .ps-mbar a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function () { if (!gracias.hidden) { gracias.hidden = true; main.hidden = false; } });
+  });
 })();
 </script>
+<div id="ps-cookies" class="ps-cookies" role="region" aria-label="Aviso de cookies" hidden>
+  <div class="ps-cookies-texto">
+    <p data-con-ga>Usamos cookies de Google Analytics para saber cómo se usa la web y por qué canales nos encuentran, y, si lo autoriza, datos de publicidad para conocer el perfil general de quienes nos visitan. Solo se instalan si las acepta. <a href="politica-de-privacidad.html">Más información</a></p>
+    <p data-sin-ga hidden>Esta web no utiliza cookies de análisis ni de publicidad. Solo guarda en su navegador la respuesta a este aviso para no volver a mostrárselo. <a href="politica-de-privacidad.html">Más información</a></p>
+  </div>
+  <div class="ps-cookies-ajustes" hidden>
+    <label><input type="checkbox" checked disabled> <b>Técnicas</b>, necesarias para que la web funcione. Siempre activas.</label>
+    <label><input type="checkbox" data-finalidad="analitica"> <b>Analítica</b> (Google Analytics): páginas vistas, procedencia, dispositivo y uso del formulario, de forma estadística.</label>
+    <label><input type="checkbox" data-finalidad="publicidad"> <b>Publicidad y datos demográficos</b> (señales de Google): edad, sexo e intereses aproximados de los visitantes, de forma agregada.</label>
+  </div>
+  <div class="ps-cookies-botones">
+    <button type="button" class="ps-cookies-btn" data-cookies="rechazar">Rechazar</button>
+    <button type="button" class="ps-cookies-btn" data-cookies="configurar" data-con-ga>Configurar</button>
+    <button type="button" class="ps-cookies-btn" data-cookies="guardar" hidden>Guardar mi elección</button>
+    <button type="button" class="ps-cookies-btn" data-cookies="aceptar">Aceptar todo</button>
+  </div>
+</div>
+<style>
+  .ps-cookies { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 2000; max-width: 820px; margin: 0 auto;
+    background: #16261D; color: #FFFFFF; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px 20px; align-items: center;
+    flex-wrap: wrap; box-shadow: 0 20px 50px -20px rgba(16, 24, 40, .6); font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; }
+  .ps-cookies[hidden], .ps-cookies [hidden] { display: none !important; }
+  .ps-cookies-texto { flex: 1 1 340px; } .ps-cookies-texto p { margin: 0; font-size: 15px; line-height: 1.5; }
+  .ps-cookies-texto a { color: #32734A; text-underline-offset: 3px; }
+  .ps-cookies-ajustes { flex: 1 1 100%; display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; line-height: 1.45; }
+  .ps-cookies-ajustes label { display: flex; gap: 10px; align-items: flex-start; }
+  .ps-cookies-ajustes input { width: 18px; height: 18px; margin: 2px 0 0; flex: 0 0 auto; accent-color: #32734A; }
+  .ps-cookies-botones { display: flex; gap: 10px; flex: 0 0 auto; flex-wrap: wrap; }
+  /* Mismo tamaño y peso para aceptar y rechazar */
+  .ps-cookies-btn { min-width: 112px; height: 44px; padding: 0 14px; border-radius: 10px; border: 2px solid #32734A; background: #32734A;
+    color: #FFFFFF; font: 700 15px 'Schibsted Grotesk', Arial, sans-serif; cursor: pointer; }
+  .ps-cookies-btn[data-cookies="configurar"] { background: transparent; color: #FFFFFF; border-color: rgba(255,255,255,.55); }
+  .ps-cookies-btn:focus-visible { outline: 3px solid #FFFFFF; outline-offset: 2px; }
+  @media (max-width: 520px) { .ps-cookies-botones { width: 100%; } .ps-cookies-btn { flex: 1 1 0; min-width: 0; } }
+  body:has(.ps-mbar) .ps-cookies { bottom: max(16px, calc(var(--ps-mbar-alto, 0px) + 12px)); }
+</style>
+<script>window.PS_CONFIG = { googleAnalytics: 'G-PW0QJ5N13N' };</script>
+<script>
+(function () {
+  var CLAVE = 'ps-aviso-cookies', aviso = document.getElementById('ps-cookies');
+  var GA = (window.PS_CONFIG && window.PS_CONFIG.googleAnalytics || '').trim();
+  var cola = [], cargado = false, permiso = { analitica: false, publicidad: false };
+  function leer() { try { return JSON.parse(localStorage.getItem(CLAVE) || 'null'); } catch (e) { return null; } }
+  function guardar(p) { try { localStorage.setItem(CLAVE, JSON.stringify({ analitica: !!p.analitica, publicidad: !!p.publicidad, fecha: new Date().toISOString().slice(0, 10) })); } catch (e) {} }
+
+  // Google Analytics solo se descarga si el visitante acepta la analítica
+  function cargarGA() {
+    if (!GA || cargado || !permiso.analitica) return;
+    cargado = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    gtag('consent', 'default', { analytics_storage: 'granted', ad_storage: permiso.publicidad ? 'granted' : 'denied',
+      ad_user_data: permiso.publicidad ? 'granted' : 'denied', ad_personalization: permiso.publicidad ? 'granted' : 'denied' });
+    gtag('js', new Date());
+    gtag('config', GA, { allow_google_signals: permiso.publicidad, allow_ad_personalization_signals: permiso.publicidad,
+      cookie_expires: 60 * 60 * 24 * 395 });
+    var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA);
+    document.head.appendChild(s);
+    cola.splice(0).forEach(function (e) { gtag('event', e[0], e[1]); });
+  }
+  // Eventos propios (sin datos personales): se envían solo con la analítica aceptada
+  window.psEvento = function (nombre, datos) {
+    if (!GA || !permiso.analitica) return;
+    if (cargado) gtag('event', nombre, datos || {}); else cola.push([nombre, datos || {}]);
+  };
+  function aplicar(p) { permiso = { analitica: !!p.analitica, publicidad: !!p.publicidad }; cargarGA(); }
+  function colocar() {
+    var barra = document.querySelector('.ps-mbar');
+    var alto = barra && getComputedStyle(barra).display !== 'none' ? barra.getBoundingClientRect().height : 0;
+    document.documentElement.style.setProperty('--ps-mbar-alto', alto + 'px');
+  }
+  if (!aviso) return;
+  colocar(); window.addEventListener('resize', colocar);
+  if (!GA) { aviso.querySelectorAll('[data-con-ga]').forEach(function (x) { x.hidden = true; }); aviso.querySelector('[data-sin-ga]').hidden = false; }
+  var previo = leer();
+  if (previo && typeof previo === 'object') aplicar(previo); else aviso.hidden = false;
+
+  var ajustes = aviso.querySelector('.ps-cookies-ajustes');
+  function borrarCookiesGA() {
+    document.cookie.split(';').forEach(function (c) {
+      var n = c.split('=')[0].trim();
+      if (n.indexOf('_ga') === 0 || n.indexOf('_gid') === 0) {
+        var partes = location.hostname.split('.');
+        for (var i = 0; i < partes.length; i++) {
+          var dominio = partes.slice(i).join('.');
+          document.cookie = n + '=; Max-Age=0; path=/; domain=' + dominio;
+          document.cookie = n + '=; Max-Age=0; path=/; domain=.' + dominio;
+        }
+        document.cookie = n + '=; Max-Age=0; path=/';
+      }
+    });
+  }
+  function cerrar(p) {
+    var retira = cargado && !p.analitica;
+    guardar(p); aviso.hidden = true;
+    if (retira) { borrarCookiesGA(); location.reload(); return; }  // retirar el consentimiento borra las cookies y descarga Google Analytics
+    if (!p.analitica) borrarCookiesGA();
+    aplicar(p);
+  }
+  aviso.querySelector('[data-cookies="aceptar"]').addEventListener('click', function () { cerrar({ analitica: true, publicidad: true }); });
+  aviso.querySelector('[data-cookies="rechazar"]').addEventListener('click', function () { cerrar({ analitica: false, publicidad: false }); });
+  aviso.querySelector('[data-cookies="configurar"]').addEventListener('click', function () {
+    ajustes.hidden = false; this.hidden = true; aviso.querySelector('[data-cookies="guardar"]').hidden = false;
+  });
+  aviso.querySelector('[data-cookies="guardar"]').addEventListener('click', function () {
+    cerrar({ analitica: ajustes.querySelector('[data-finalidad="analitica"]').checked, publicidad: ajustes.querySelector('[data-finalidad="publicidad"]').checked });
+  });
+  // «Cambiar mis preferencias» (política de cookies): vuelve a mostrar el aviso con la elección actual
+  document.querySelectorAll('[data-cookies-reabrir]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var p = leer() || {};
+      ajustes.querySelector('[data-finalidad="analitica"]').checked = !!p.analitica;
+      ajustes.querySelector('[data-finalidad="publicidad"]').checked = !!p.publicidad;
+      if (GA) { ajustes.hidden = false; aviso.querySelector('[data-cookies="configurar"]').hidden = true; aviso.querySelector('[data-cookies="guardar"]').hidden = false; }
+      aviso.hidden = false; aviso.querySelector('button').focus();
+    });
+  });
+  // Clics en «Llamar», en el correo y en enlaces externos
+  document.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('a[href]'); if (!a) return;
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('tel:') === 0) psEvento('click_telefono', { ubicacion: a.closest('header') ? 'cabecera' : (a.closest('.ps-mbar') ? 'barra_movil' : 'pagina') });
+    else if (h.indexOf('mailto:') === 0) psEvento('click_correo', { tipo: a.hasAttribute('data-mailto-docs') ? 'documentos' : 'contacto' });
+  });
+  // Secciones que llegan a verse (interés por el equipo, el estudio, las preguntas…)
+  if ('IntersectionObserver' in window) {
+    var vistas = {};
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { var id = e.target.id; if (e.isIntersecting && id && !vistas[id]) { vistas[id] = 1; psEvento('ver_seccion', { seccion: id }); } });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('main section[id], main [id][data-seccion]').forEach(function (s) { io.observe(s); });
+  }
+})();
+</script>
+
 </body>
 </html>
